@@ -98,22 +98,20 @@
 					</div>
 				</div>
 			</section>
-			<form class="hotel-find-window">
-				<header>
-					<h2>Поиск гостиницы в Седоне</h2>
+			<form class="hotel-search-window">
+				<header class="hotel-search-header">
+					<h2 class="white-text">Поиск гостиницы в Седоне</h2>
 				</header>
-				<div>
-					<p>Дата заезда:</p><input type="text" value="24 апреля 2017">
-					<p>Дата выезда:</p><input type="text" value="4 июля 2017">
-					<p>Взрослые:</p><input type="number" value="2">
-					<p>Дети:</p><input type="number" value="0">
-					<input type="submit" value="найти">
-				</div>
+				<fieldset class="hotel-search-info">
+					<p class="arrival-date form-text">Дата заезда:</p><input class="arr-date-input" type="text" value="24 апреля 2017">
+					<p class="departure-date form-text">Дата выезда:</p><input class="dep-date-input" type="text" value="4 июля 2017">
+					<p class="adults form-text">Взрослые:</p><input class="adults-count" type="number" value="2">
+					<p class="kids form-text form-text-kids">Дети:</p><input class="kids-count" type="number" value="0">
+					<input class="white-text hotel-submit" type="submit" value="найти"> 
+				</fieldset>
 			</form>
 			<footer class="main-footer">
-				<article class="map">
-					
-				</article>
+				<img class="map" src="img/map.jpg" alt="A picture of a map">
 				<div class="panel-bottom">
 					<section class="footer-left footer-block">
 						<h2 class="footer-visit">#VISITSEDONA</h2>
