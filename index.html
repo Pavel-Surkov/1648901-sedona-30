@@ -3,116 +3,136 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Седона</title>
+		<link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="icon" href="img/icons/32.ico">
+		<link rel="icon" href="favicon.ico">
+		<link rel="apple-touch-icon" href="img/icons/152.png">
+		<link rel="manifest" href="favicon.webmanifest">
 	</head>
 	<body>
-
 		<main>
-			<div class="logo-section"><a href="#"><img class="logo" src="img/logo.svg" alt="Логотип"></a></div>
-			<header>
-				<ul>
-					<li class="nav-item-1"><a href="##">ИНФОРМАЦИЯ</a></li>
-					<li class="nav-item-2"><a href="#">ФОТО И ВИДЕО</a></li>
-					<li class="nav-item-3"><a href="#">КАРТА ШТАТА</a></li>
-					<li class="nav-item-4"><a href="#">ГОСТИНИЦЫ</a></li>
-				</ul>
+			<header class="main-head">
+				<nav class="navigation">
+					<a href="##">информация</a>
+					<a href="#">фото и видео</a>
+					<a href="#">карта штата</a>
+					<a href="catalog.html">гостиницы</a>
+				</nav>
+				<a class="logo" href="index.html"><img src="img/logo.svg" alt="Логотип"></a>
 			</header>
 			<div class="main-picture">
-				<img class="background-photo-svg" src="img/background-photo.svg" alt="welcome to Sedona">
-				<img class="welcome-svg" src="img/welcome.svg">
-				<img class="lower-svg" src="img/shape-lower.svg">  <!--  форму верстать на флексбоксах -->
+				<img class="background-photo-svg" src="img/background-photo.jpg" width="1200" height="509" alt="welcome to Sedona">
+				<img class="margin-welcome-svg" src="img/welcome.svg" alt="">
+				<img class="margin-lower-svg" src="img/shape-lower.svg" alt="">  <!--  форму верстать на флексбоксах -->
 			</div>
 			<section>
-				<div class="block-first">
-					<div class="first-bold">
-						<p>СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, <br>ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</p>
+				<div class="block-first d-flex">
+					<div class="margin-first-box">
+						<h2>Седона — небольшой городок в Аризоне, <br>заслуживающий большего!</h2>
 					</div>
 					<div class="first-small">
-						<span class="text-small">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</span>
+						<span>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</span>
 					</div>
 				</div>
-				<div>
-					<div class="blue">
-						<div><p class="white-text">НАСТОЯЩИЙ<br>ГОРОДОК</p></div>
-						<span class="white-text text-small margin-number">— №1 —</span>
-						<span class="white-text text-small margin-small">СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ <br> 
-						ТЕЧЁТ СВОЯ ЖИЗНЬ</span>
+				<div class="d-flex">
+					<div class="blue-advantages advantages">
+						<h2 class="white-text margin-gb-backgrounds">Настоящий <br>городок</h2>
+						<span class="white-text margin-number">— №1 —</span>
+						<span class="white-text margin-small">Седона - не аттракцион для туристов, там <br> 
+						течёт своя жизнь</span>
 					</div>
-					<img src="img/image-1.svg" alt="Картинка с домиком в Седоне">
+					<img src="img/image-1.jpg" alt="Картинка с домиком в Седоне" width="800" height="256">
 				</div>
-				<div>
-					<div class="icon-block icon-block-height">
+				<div class="d-flex">
+					<div class="icon-block">
 						<img class="icon" src="img/icon-1.svg" alt="Домик">
-						<div><p>ЖИЛЬЁ</p></div>
-						<span class="text-small margin-small">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ <br>МОТЕЛЕ, ВСЁ КАК В КИНО!</span>
+						<h2>Жильё</h2>
+						<span class="margin-small">Рекомендуем пожить в настоящем <br>мотеле, все как в кино!</span>
 					</div>
-					<div class="icon-block icon-block-height">
+					<div class="icon-block">
 						<img class="icon" src="img/icon-3.svg" alt="Бургер">
-						<div><p>ЕДА</p></div>
-						<span class="text-small margin-small">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, <br>ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</span>
+						<h2>Еда</h2>
+						<span class="margin-small">Всегда заказывайте фирменный бургер, <br>вы не разочаруетесь!</span>
 					</div>
-					<div class="icon-block icon-block-height">
+					<div class="icon-block">
 						<img class="icon" src="img/icon-2.svg" alt="Подарок">
-						<div><p>СУВЕНИРЫ</p></div>
-						<span class="text-small margin-small">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО <br>ПРОИЗВОДСТВА!</span>
+						<h2>Сувениры</h2>
+						<span class="margin-small">Не только китайского, но и местного <br>производства!</span>
 					</div>
 				</div>
-				<div>
-					<img src="img/image-2.svg" alt="Картинка с каньоном">
-					<div class="blue">
-						<div><p class="white-text">ТАМ ЕСТЬ <br>МОСТ ДЬЯВОЛА</p></div>
-						<span class="white-text text-small margin-number">— №2 —</span>
-						<span class="white-text text-small margin-small">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО <br>
-						ВЫ ОСМЕЛИТЕСЬ</span>
+				<div class="d-flex">
+					<img src="img/image-2.jpg" alt="Картинка с каньоном" width="800" height="256">
+					<div class="blue-advantages advantages">
+						<h2 class="white-text margin-gb-backgrounds">Там есть <br>мост дьявола</h2>
+						<span class="white-text margin-number">— №2 —</span>
+						<span class="white-text margin-small">Да, по нему можно пройти! Если конечно <br>
+						вы осмелитесь</span>
 					</div>
 				</div>
-				<div>
-					<div class="gray icon-block">
-						<div><p>НЕБОЛЬШАЯ <br>ПЛОЩАДЬ</p></div>
-						<span class="text-small margin-number">— №3 —</span>
-						<span class="text-small margin-small">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ <br>
+				<div class="d-flex">
+					<div class="advantages">
+						<h2 class="margin-gb-backgrounds">Небольшая <br>площадь</h2>
+						<span class="margin-number">— №3 —</span>
+						<span class="margin-small">Все достопримечатеольности <br>
 						НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</span>
 					</div>
-					<div class="gray icon-block">
-						<div><p>КРАСИВАЯ <br>ДОРОГА</p></div>
-						<span class="text-small margin-number">— №4 —</span>
-						<span class="text-small margin-small">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ<br>
-						НЕ СКУЧНО!</span>
+					<div class="advantages">
+						<h2 class="margin-gb-backgrounds">Красивая <br>дорога</h2>
+						<span class="margin-number">— №4 —</span>
+						<span class="margin-small">Ехать в Седону из Лас-Вегаса совсем <br>
+						не скучно!</span>
 					</div>
-					<div class="gray icon-block">
-						<div><p>МАЛО<br>ТУРИСТОВ</p></div>
-						<span class="text-small margin-number">— №5 —</span>
-						<span class="text-small margin-small">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН<br>
-						И ТОЛПИТСЯ ТАМ</span>
+					<div class="advantages">
+						<h2 class="margin-gb-backgrounds">Мало<br> туристов</h2>
+						<span class="margin-number">— №5 —</span>
+						<span class="margin-small">Большинство едет в гранд каньон <br>
+						и толпится там</span>
 					</div>
 				</div>
-				<div class="block-last">
-					<div class="last-bold"><p>ЗАИНТЕРЕСОВАЛИСЬ?</p></div>
+				<div class="block-last d-flex">
+					<h2 class="last-bold">Заинтересовались?</h2>
 					<div class="last-small">
-						<span class="text-small">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, <br>
-						И МЫ ПОКАЖЕМ ВАМ 	ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</span>
+						<span>Укажите предполагаемые даты поездки, <br>
+						и мы покажем лучшие предложения гостиниц в седоне</span>
 					</div>
 				</div>
 			</section>
-			<article class="map">
-				<footer>
-					<section>
-						<div><p>#VISITSEDONA</p></div>
-						<div><p>ТЕЛ: +7(495)666-01-66</p></div>
+			<form class="hotel-find-window">
+				<header>
+					<h2>Поиск гостиницы в Седоне</h2>
+				</header>
+				<div>
+					<p>Дата заезда:</p><input type="text" value="24 апреля 2017">
+					<p>Дата выезда:</p><input type="text" value="4 июля 2017">
+					<p>Взрослые:</p><input type="number" value="2">
+					<p>Дети:</p><input type="number" value="0">
+					<input type="submit" value="найти">
+				</div>
+			</form>
+			<footer class="main-footer">
+				<article class="map">
+					
+				</article>
+				<div class="panel-bottom">
+					<section class="footer-left footer-block">
+						<h2 class="footer-visit">#VISITSEDONA</h2>
+						<h2>ТЕЛ: +7(495)666-01-66</h2>
 					</section>
-					<section>
+					<section class="footer-center footer-block">
 						<a href="#"><div class="footer-icon"><img src="img/twitter.svg" alt="Twitter"></div></a>
 						<a href="#"><div class="footer-icon"><img src="img/fb-icon.svg" alt="Facebook"></div></a>
-						<a href="#"><div class="footer-icon"><img src="img/youtube.svg" alt="youtube"></div></a>
+						<a href="#"><div class="footer-icon"><img src="img/youtube.svg" alt="Youtube"></div></a>
 					</section>
-					<section>
-						<span class="text-small">WEBSITE BY </span>
+					<section class="footer-block">
+						<pre>website by   </pre>
 						<a href="https://htmlacademy.ru/intensive/htmlcss">
 							<img src="img/logo-htmlacademy.svg" alt="Сайт html-academy">
 						</a>
 					</section>
-				</footer>
-			</article>
+				</div>
+			</footer>
 		</main>
+		<script src="js/script.js"></script>
 	</body>
 </html>

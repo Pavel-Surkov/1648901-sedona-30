@@ -4,65 +4,78 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>HTML Academy: Седона Каталог</title>
+	<link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="img/icons/32.ico">
+	<link rel="apple-touch-icon" href="img/icons/152.png">
+	<link rel="manifest" href="favicon.webmanifest">
 </head>
 <body>
 	<main>
-		<div class="logo-section"><a href="index.html"><img class="logo" src="img/logo.svg" alt="Логотип"></a></div>
-		<header>
-			<ul>
-				<li class="nav-item-1"><a href="##">ИНФОРМАЦИЯ</a></li>
-				<li class="nav-item-2"><a href="#">ФОТО И ВИДЕО</a></li>
-				<li class="nav-item-3"><a href="#">КАРТА ШТАТА</a></li>
-				<li class="nav-item-4"><a href="catalog.html">ГОСТИНИЦЫ</a></li>
-			</ul>
+		<header class="main-head">
+			<nav class="navigation">
+				<a href="##">информация</a>
+				<a href="#">фото и видео</a>
+				<a href="#">карта штата</a>
+				<a href="catalog.html">гостиницы</a>
+			</nav>
+			<a class="logo" href="index.html"><img src="img/logo.svg" alt="Логотип"></a>
 		</header>
 		<section>
 			<form>
 				<fieldset>
-					<legend><h4>ИНФРАСТРУКТУРА:</h4></legend>
-					<span class="text-small"><input type="checkbox" name="structure" value="Бассейн">БАССЕЙН</span><br>
-					<span class="text-small"><input type="checkbox" name="structure" value="Парковка">ПАРКОВКА</span><br>
-					<span class="text-small"><input type="checkbox" name="structure" value="WI-FI">WI-FI</span>
+					<legend class="white-text">ИНФРАСТРУКТУРА:</legend>
+					<p class="white-text checkbox-item"><input type="checkbox" name="structure" value="Pool">БАССЕЙН</p>
+					<p class="white-text checkbox-item"><input type="checkbox" name="structure" value="Parking">ПАРКОВКА</p>
+					<p class="white-text checkbox-item"><input type="checkbox" name="structure" value="WI-FI">WI-FI</p>
 				</fieldset>
 				<fieldset>
-					<legend><h4>ТИП ЖИЛЬЯ:</h4></legend>
-					<span class="text-small"><input type="checkbox" name="type-of-house" value="Гостиница">ГОСТИНИЦА</span><br>
-					<span class="text-small"><input type="checkbox" name="type-of-house" value="Мотель">МОТЕЛЬ</span><br>
-					<span class="text-small"><input type="checkbox" name="type-of-house" value="Апартаменты	">АПАРТАМЕНТЫ</span>
+					<legend class="white-text">ТИП ЖИЛЬЯ:</legend>
+					<p class="white-text">
+						<input type="checkbox" name="type-of-house" value="Hotel">ГОСТИНИЦА
+					</p>
+					<p class="white-text">
+						<input type="checkbox" name="type-of-house" value="Motel">МОТЕЛЬ
+					</p>
+					<p class="white-text">
+						<input type="checkbox" name="type-of-house" value="Apartments">АПАРТАМЕНТЫ
+					</p>
 				</fieldset>
 				<fieldset class="fieldset-right">
-					<legend><p>СТОИМОСТЬ В СУТКИ (Р):</p></legend>
-					<input class="text-small range-input-text" type="" name="of" value="ОТ ">
-					<input class="text-small range-input-text" type="" name="to" value="ДО ">
+					<legend class="white-text">СТОИМОСТЬ В СУТКИ (Р):</legend>
+					<input class="range-input-text" type="text" name="from" value="от">
+					<input class="range-input-text" type="text" name="to" value="до">
 					<input type="range" min="0" max="4000" step="50" value="1500">
-					<input type="submit" value="ПОКАЗАТЬ">
+					<button type="submit">показать</button>
 				</fieldset>
 			</form>
+			<img src="img/background-photo-cut.svg" alt="Размытые горы">
 		</section>
-		<img src="img/background-photo-cut.svg" alt="Размытые горы">
 		<section>
 			<!-- <div class="sort"> -->
-			<p>НАЙДЕНО: 3</p>
+			<p>НАЙДЕНО: 3</p>	h2
 			<span>СОРТИРОВКА:</span>
-			<a><span class="text-small">ПО ЦЕНЕ</span></a>
-			<a><span class="text-small">ПО ТИПУ</span></a>
-			<a><span class="text-small">ПО РЕЙТИНГУ</span></a>
+			<a><span>ПО ЦЕНЕ</span></a>
+			<a><span>ПО ТИПУ</span></a>
+			<a><span>ПО РЕЙТИНГУ</span></a>
 			<img src="img/icon-up-dir.svg" alt="стрелка 'вверх'">
 			<img src="img/icon-down-dir.svg" alt="стрелка 'вниз'">
 			<!-- </div> -->
 			<hr>
 			<article>
-				<img src="https://via.placeholder.com/135x90">
+				<img src="img/Amara-resort-&-SPA.jpg" alt="Отель, окружённый красными горами" width="135" height="90">
 				<div>
 					<p>AMARA RESORT & SPA</p>
-					<span class="text-small">ГОСТИНИЦА</span>
-					<span class="text-small">ОТ 4000 Р.</span>
+					<span>ГОСТИНИЦА</span>
+					<span>ОТ 4000 Р.</span>
 					<button class="info-button">ПОДРОБНЕЕ</button>
 					<button class="brown-button">ЗАБРОНИРОВАТЬ</button>
 				</div>
 				<div>
-					<img src="" alt="4 звезды"><!-- звезды -->
+					<img src="img/Shape-star.svg" alt="Рейтинг: 4 звезды">
+					<img src="img/Shape-star.svg" alt="">
+					<img src="img/Shape-star.svg" alt="">
+					<img src="img/Shape-star.svg" alt="">
 					<div>
 						<span>РЕЙТИНГ: 8,5</span> <!-- серый бэкграунд -->
 					</div>
@@ -70,16 +83,18 @@
 				</div>
 			</article>
 			<article>
-				<img src="https://via.placeholder.com/135x90">
+				<img src="img/Desert-quall-inn.jpg" alt="Мотель как в американских фильмах" width="135" height="90">
 				<div>
 					<p>DESERT QUAIL INN</p>
-					<span class="text-small">МОТЕЛЬ</span>
-					<span class="text-small">ОТ 3000 Р.</span>
+					<span>МОТЕЛЬ</span>
+					<span>ОТ 3000 Р.</span>
 					<button class="info-button">ПОДРОБНЕЕ</button>
 					<button class="brown-button">ЗАБРОНИРОВАТЬ</button>
 				</div>
 				<div>
-					<img src="" alt="3 звезды"><!-- звезды -->
+					<img src="img/Shape-star.svg" alt="Рейтинг: 3 звезды">
+					<img src="img/Shape-star.svg" alt="">
+					<img src="img/Shape-star.svg" alt="">
 					<div>
 						<span>РЕЙТИНГ: 8,9</span> <!-- серый бэкграунд -->
 					</div>
@@ -87,16 +102,18 @@
 				</div>
 			</article>
 				<article>
-				<img src="https://via.placeholder.com/135x90">
+				<img src="img/Villas-at-poco-diablo.jpg" alt="Одноэтажный домик в лесу с подстриженным газоном" 
+				width="135" height="90">
 				<div>
 					<p>VILLAS AT POCO DIABLO</p>
-					<span class="text-small">АПАРТАМЕНТЫ</span>
-					<span class="text-small">ОТ 2000 Р.</span>
+					<span>АПАРТАМЕНТЫ</span>
+					<span>ОТ 2000 Р.</span>
 					<button class="info-button">ПОДРОБНЕЕ</button>
 					<button class="brown-button">ЗАБРОНИРОВАТЬ</button>
 				</div>
 				<div>
-					<img src="" alt="2 звезды"><!-- звезды -->
+					<img src="img/Shape-star.svg" alt="Рейтинг: 2 звезды">
+					<img src="img/Shape-star.svg" alt="">
 					<div>
 						<span>РЕЙТИНГ: 9,2</span> <!-- серый бэкграунд -->
 					</div>
@@ -104,24 +121,25 @@
 				</div>
 			</article>
 		</section>
-		<footer>
-					<section class="footer-left">
-						<div class="footer-visit"><p>#VISITSEDONA</p></div>
-						<div><p>ТЕЛ: +7(495)666-01-66</p></div>
-					</section>
-					<section class="footer-center">
-						<a href="#"><div class="footer-icon"><img src="img/twitter.svg" alt="Twitter"></div></a>
-						<a href="#"><div class="footer-icon"><img src="img/fb-icon.svg" alt="Facebook"></div></a>
-						<a href="#"><div class="footer-icon"><img src="img/youtube.svg" alt="Youtube"></div></a>
-					</section>
-					<section>
-						<pre class="text-small">WEBSITE BY   </pre>
-						<a href="https://htmlacademy.ru/intensive/htmlcss">
-							<img src="img/logo-htmlacademy.svg" alt="Сайт html-academy">
-						</a>
-					</section>
-				</footer>
-
+		<footer class="main-footer main-footer-catalog">
+			<div class="panel-bottom">
+				<section class="footer-left footer-block">
+					<div class="footer-visit"><h2>#VISITSEDONA</h2></div>
+					<div><h2>ТЕЛ: +7(495)666-01-66</h2></div>
+				</section>
+				<section class="footer-center footer-block">
+					<a href="#"><div class="footer-icon"><img src="img/twitter.svg" alt="Twitter"></div></a>
+					<a href="#"><div class="footer-icon"><img src="img/fb-icon.svg" alt="Facebook"></div></a>
+					<a href="#"><div class="footer-icon"><img src="img/youtube.svg" alt="Youtube"></div></a>
+				</section>
+				<section class="footer-block">
+					<pre>website by   </pre>
+					<a href="https://htmlacademy.ru/intensive/htmlcss">
+						<img src="img/logo-htmlacademy.svg" alt="Сайт html-academy">
+					</a>
+				</section>
+			</div>
+		</footer>
 			<!-- фильтр верстать с помощью формы, кнопка «Показать» отвечает за отправку формы на адрес https://echo.htmlacademy.ru/.-->
 
 
@@ -130,5 +148,6 @@
 
 
 	</main>
+	<script src="js/script.js"></script>
 </body>
 </html>
