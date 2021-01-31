@@ -12,7 +12,7 @@
 </head>
 <body>
 	<main>
-		<header class="main-head main-padding">
+		<header class="main-head">
 			<nav class="navigation">
 				<a href="##">информация</a>
 				<a href="#">фото и видео</a>
@@ -21,38 +21,32 @@
 			</nav>
 			<a class="logo" href="index.html"><img src="img/logo.svg" alt="Логотип"></a>
 		</header>
-		<section>
+		<section class="form-catalog-section">
 			<form class="form-catalog">
-				<fieldset>
+				<div class="form-structure">
 					<legend class="legend-text">ИНФРАСТРУКТУРА:</legend>
 					<p class="checkbox-item"><input type="checkbox" name="structure" value="Pool">БАССЕЙН</p>
 					<p class="checkbox-item"><input type="checkbox" name="structure" value="Parking">ПАРКОВКА</p>
 					<p class="checkbox-item"><input type="checkbox" name="structure" value="WI-FI">WI-FI</p>
-				</fieldset>
-				<fieldset>
+				</div>
+				<div class="form-housing-type">
 					<legend class="legend-text">ТИП ЖИЛЬЯ:</legend>
-					<p>
-						<input type="checkbox" name="type-of-house" value="Hotel">ГОСТИНИЦА
-					</p>
-					<p>
-						<input type="checkbox" name="type-of-house" value="Motel">МОТЕЛЬ
-					</p>
-					<p>
-						<input type="checkbox" name="type-of-house" value="Apartments">АПАРТАМЕНТЫ
-					</p>
-				</fieldset>
-				<fieldset class="fieldset-right">
+					<p><input type="checkbox" name="type-of-house" value="Hotel">ГОСТИНИЦА</p>
+					<p><input type="checkbox" name="type-of-house" value="Motel">МОТЕЛЬ</p>
+					<p><input type="checkbox" name="type-of-house" value="Apartments">АПАРТАМЕНТЫ</p>
+				</div>
+				<div class="form-housing-cost">
 					<legend class="legend-text">СТОИМОСТЬ В СУТКИ (Р):</legend>
 					<input class="range-input-text" type="text" name="from" value="от">
 					<input class="range-input-text" type="text" name="to" value="до">
 					<input type="range" min="0" max="4000" step="50" value="1500">
 					<button class="right-fieldset-submit " type="submit">ПОКАЗАТЬ</button>
-				</fieldset>
+				</div>
 			</form>
-			<img class="background-gray" src="img/background-photo-cut.svg" alt="Размытые горы">
+			<img class="background-gray" src="img/background-photo-cut.svg" alt="Размытые горы" height="217" width="1200">
 		</section>
 		<section>
-			<div class="sort main-block main-padding"> 
+			<div class="sort"> 
 				<h2>НАЙДЕНО: 3</h2>
 				<p class="sort-text">СОРТИРОВКА:</p>
 				<a href="#"><p>ПО ЦЕНЕ</p></a>
@@ -62,7 +56,7 @@
 				<img class="sort-pointer-down" src="img/icon-down-dir.svg" alt="стрелка 'вниз'">
 			</div>
 			<hr class="line">
-			<article class="main-padding block-hotel main-block">
+			<article class="block-hotel">
 				<img class="background-gray block-hotel-image" src="img/Amara-resort-&-SPA.jpg" 
 				alt="Отель, окружённый красными горами" width="135" height="90">
 				<div class="block-name-price">
@@ -82,8 +76,8 @@
 					<p class="background-gray rating-text">РЕЙТИНГ: 8,5</p> <!-- серый бэкграунд -->
 				</div>
 			</article>
-			<hr class="line"> white
-			<article class="main-padding block-hotel main-block">
+			<hr class="line">
+			<article class="block-hotel">
 				<img class="background-gray block-hotel-image" src="img/Desert-quall-inn.jpg" 
 				alt="Мотель как в американских фильмах" width="135" height="90">
 				<div class="block-name-price">
@@ -103,7 +97,7 @@
 				</div>
 			</article>
 			<hr class="line">
-			<article class="main-padding block-hotel main-block">
+			<article class="block-hotel">
 			<img class="background-gray block-hotel-image" src="img/Villas-at-poco-diablo.jpg" 
 			alt="Одноэтажный домик в лесу с подстриженным газоном" 
 			width="135" height="90">
