@@ -42,7 +42,12 @@ main {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 .btn span {
+	text-transform: uppercase;
 	font-family: "PTSans-Bold";
+}
+.btn:active span,
+.btn:active h2 {
+	opacity: 0.3;
 }
 .hidden {
 	display: none;
@@ -60,20 +65,20 @@ main {
 	width: 1054px;
 	display: flex;
 }
-.navigation a {
+.navigation-item a {
 	font-family: "PTSans-Bold";
 }
-.navigation a:hover {
+.navigation-item a:hover {
   color: var(--basic-light-blue);
 }
-.navigation a:active {
+.navigation-item a:active {
   color: black;
   opacity: 0.3;
 }
-.navigation a:nth-child(1) {
+.navigation-info {
 	margin-right: 134px;
 }
-.navigation a:nth-child(3) {
+.navigation-map {
 	margin-left: auto;
 	margin-right: 147px;
 }
@@ -323,9 +328,6 @@ main {
 .search-submit:active {
 	background-color: #5496BD;
 }
-.search-submit:active span {
-	opacity: 0.3;
-}
 .background-gray {
 	background-color: var(--background);
 }
@@ -509,13 +511,6 @@ main {
 }
 .brown-button:active {
 	background-color: #503E33;
-}
-.info-button:active p,
-.brown-button:active p {
-	opacity: 0.3;
-}
-.brown-button:active h2 {
-	opacity: 0.3;
 }
 .form-catalog-section {
 	height: 217px;
