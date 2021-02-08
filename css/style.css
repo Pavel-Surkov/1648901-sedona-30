@@ -291,6 +291,24 @@ main {
 	width: 114px;
 	text-align: center;
 }
+.calendar-arrival {
+	position: absolute;
+	margin-left: 428px;
+	margin-top: 7px;
+}
+.calendar-departure {
+	position: absolute;
+	margin-left: 428px;
+	margin-top: 75px;
+}
+.calendar-arrival:hover path,
+.calendar-departure:hover path {
+	fill: black;
+}
+.calendar-arrival:active path,
+.calendar-departure:active path {
+	fill: var(--basic-light-blue);
+}
 .arrival-date-input,
 .departure-date-input,
 .adults-count,
