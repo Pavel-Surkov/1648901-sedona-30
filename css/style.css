@@ -216,6 +216,17 @@ main {
 	height: 48px;
 	margin: 0 3px 0 3px;
 }
+.footer-icon:hover {
+	background-color: #669EC0;
+}
+.footer-icon:active {
+	background-color: #5496BD;
+}
+.footer-icon:active .twitter,
+.footer-icon:active .facebook,
+.footer-icon:active .youtube {
+	opacity: 0.3;
+}
 .footer-left {
 	flex-direction: column;
 	justify-content: flex-start;
