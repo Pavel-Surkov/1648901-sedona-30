@@ -305,11 +305,6 @@ main {
 	padding-right: 45px;
 	grid-area: 2 / 2 / 3 / 5;
 }
-.adults-count, 
-.kids-count {
-	width: 114px;
-	text-align: center;
-}
 .calendar-arrival {
 	position: absolute;
 	margin-left: 428px;
@@ -352,6 +347,12 @@ main {
 	margin-left: 425px;
 	margin-top: 136px;
 }
+.adults-count, 
+.kids-count {
+	width: 34px;
+	text-align: center;
+	padding: 0 40px;
+}
 .plus-adults:hover path,
 .minus-adults:hover rect,
 .minus-kids:hover rect,
@@ -364,7 +365,6 @@ main {
 .plus-kids:active path {
 	fill: var(--basic-light-blue);
 }
-
 .arrival-date-input,
 .departure-date-input,
 .adults-count,
