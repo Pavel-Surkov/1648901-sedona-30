@@ -420,14 +420,14 @@ main {
 	font-family: "PTSans-Bold";
 	height: 21px;
 }
-.form-structure label:nth-child(3),
-.form-housing-type label:nth-child(3) {
+.form-structure label:nth-child(5),
+.form-housing-type label:nth-child(5) {
 	margin-top: 25px;
 	margin-bottom: 25px;
 	height: 21px;
 }
-.form-structure label:nth-child(2),
-.form-housing-type label:nth-child(2) {
+.form-structure label:nth-child(3),
+.form-housing-type label:nth-child(3) {
 	margin-top: 24px;
 }
 .form-structure {
@@ -469,7 +469,30 @@ main {
 
 
 
-
+.checkbox-item {
+	display: none;
+}
+.checkbox-item + label {
+	margin-left: 39px;
+}
+.checkbox-item + label::before {
+	content: "";
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	background-repeat: no-repeat;
+	background: url(../img/checkbox-off.svg);
+	margin-left: -39px;
+}
+.checkbox-item:checked + label::before {
+	content: "";
+	position: absolute;
+	background: url(../img/checkbox-on.svg);
+	height: 23px;
+	width: 27px;
+	margin-left: -39px;
+	background-repeat: no-repeat;
+}
 .right-fieldset-submit {
 	background: transparent;
 	border: 2px solid #FFF;
