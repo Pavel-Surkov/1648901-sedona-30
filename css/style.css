@@ -507,7 +507,6 @@ main {
 	color: rgb(0, 0, 0, 0.3);
 	border-bottom: 1px dashed var(--basic-light-blue);
 }
-.sort
 .line {
   background-color: #E5E5E5;
   height: 1px;
@@ -532,7 +531,16 @@ main {
 	flex-direction: column;
 }
 .block-stars {
+	display: flex;
+	list-style: none;
 	align-self: flex-end;
+}
+.block-stars li {
+	margin-left: 5px;
+	width: 18px;
+	height: 17px;
+	background: url(../img/Shape-star.svg);
+	background-repeat: no-repeat;
 }
 .rating-text {
 	color: #666;
