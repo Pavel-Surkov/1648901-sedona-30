@@ -26,21 +26,35 @@
 			<form class="form-catalog">
 				<div class="form-structure">
 					<h2 class="legend-text">ИНФРАСТРУКТУРА:</h2>
-					<input class="checkbox-item" type="checkbox" name="structure" value="Pool" checked><label>БАССЕЙН</label>
-					<input class="checkbox-item" type="checkbox" name="structure" value="Parking"><label>ПАРКОВКА</label>
-					<input class="checkbox-item" type="checkbox" name="structure" value="WI-FI"><label>WI-FI</label>
+					<input class="checkbox-item" type="checkbox" name="structure" value="Pool" checked id="pool">
+					<label for="pool">БАССЕЙН</label>
+					<input class="checkbox-item" type="checkbox" name="structure" value="Parking" id="parking">
+					<label for="parking">ПАРКОВКА</label>
+					<input class="checkbox-item" type="checkbox" name="structure" value="WI-FI" id="wi-fi">
+					<label for="wi-fi">WI-FI</label>
 				</div>
 				<div class="form-housing-type">
 					<h2 class="legend-text">ТИП ЖИЛЬЯ:</h2>
-					<input class="checkbox-item" type="checkbox" name="type-of-house" value="Hotel" checked><label>ГОСТИНИЦА</label>
-					<input class="checkbox-item" type="checkbox" name="type-of-house" value="Motel" checked><label>МОТЕЛЬ</label>
-					<input class="checkbox-item" type="checkbox" name="type-of-house" value="Apartments" checked><label>АПАРТАМЕНТЫ</label>
+					<input class="checkbox-item" type="checkbox" name="type-of-house" value="Hotel" checked id="hotel">
+					<label for="hotel">ГОСТИНИЦА</label>
+					<input class="checkbox-item" type="checkbox" name="type-of-house" value="Motel" checked id="motel">
+					<label for="motel">МОТЕЛЬ</label>
+					<input class="checkbox-item" type="checkbox" name="type-of-house" value="Apartments" checked id="apartments">
+					<label for="apartments">АПАРТАМЕНТЫ</label>
 				</div>
 				<div class="form-housing-cost">
 					<h2 class="legend-text">СТОИМОСТЬ В СУТКИ (Р):</h2>
 					<input class="range-input-text input-from" type="text" name="from" value="от">
 					<input class="range-input-text input-to" type="text" name="to" value="до">
-					<input class="range-input" type="range" min="0" max="4000" step="50" value="1500">
+					<div class="range-filter">
+						<div class="range-controls">
+							<div class="scale">
+								<div class="bar" style="width: 80%; margin-left: 0%"></div>
+							</div>
+							<div class="toggle toggle-min" tabindex="0" style="margin-left: 0%"></div>
+							<div class="toggle toggle-max" tabindex="0" style="margin-left: 80%"></div>
+						</div>
+					</div>
 					<button class="right-fieldset-submit" type="submit">ПОКАЗАТЬ</button>
 				</div>
 			</form>
@@ -70,10 +84,10 @@
 				</div>
 				<div class="block-rating">
 					<ul class="block-stars" title="Рейтинг: 4 звезды">
-						<li width="18" height="17" alt="star icon"></li>
-						<li width="18" height="17" alt="star icon"></li>
-						<li width="18" height="17" alt="star icon"></li>
-						<li width="18" height="17" alt="star icon"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
 					</ul>
 					<p class="background-gray rating-text">РЕЙТИНГ: 8,5</p> <!-- серый бэкграунд -->
 				</div>
@@ -91,9 +105,9 @@
 				</div>
 				<div class="block-rating">
 					<ul class="block-stars" title="Рейтинг: 3 звезды">
-						<li width="18" height="17" alt="star icon"></li>
-						<li width="18" height="17" alt="star icon"></li>
-						<li width="18" height="17" alt="star icon"></li>
+						<li></li>
+						<li></li>
+						<li></li>
 					</ul>
 					<p class="background-gray rating-text">РЕЙТИНГ: 8,9</p> <!-- серый бэкграунд -->
 				</div>
@@ -112,8 +126,8 @@
 				</div>
 				<div class="block-rating">
 					<ul class="block-stars" title="Рейтинг: 2 звезды">
-						<li width="18" height="17" alt="star icon"></li>
-						<li width="18" height="17" alt="star icon"></li>
+						<li></li>
+						<li></li>
 					</ul>
 					<p class="background-gray rating-text">РЕЙТИНГ: 9,2</p> <!-- серый бэкграунд -->
 				</div>
