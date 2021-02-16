@@ -11,7 +11,6 @@
   src: url("../fonts/PTSans-Bold.woff2");
   font-weight: 700;
 }
-
 :root {
   --background: #F2F2F2;
   --basic-white: #FFF;
@@ -21,7 +20,7 @@
   --basic-light-gray: #F2F2F2;
 }
 * {
-  margin: 0px;
+  margin: 0;
   font-family: "PTSans", "Arial", sans-serif;
   line-height: 21px;
   font-size: 14px;
@@ -142,10 +141,10 @@ main {
 }
 
 .first-block-tittle {
-  margin-top: 42.5px;
+  margin-top: 42px;
   width: 470px;
   height: 80px;
-  margin-bottom: 16.5px;
+  margin-bottom: 17px;
   text-align: center;
   line-height: 26px;
 }
