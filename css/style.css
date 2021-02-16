@@ -19,14 +19,6 @@
   --basic-dark-brown: #766357;
   --basic-light-gray: #F2F2F2;
 }
-* {
-  margin: 0;
-  text-transform: uppercase;
-}
-
-*:focus {
-  outline: 0;
-}
 
 body {
   display: flex;
@@ -47,6 +39,7 @@ main {
   width: 1200px;
   background-color: var(--basic-white);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
 }
 
 .btn span {
@@ -57,6 +50,9 @@ main {
 .btn:active span,
 .btn:active h2 {
   opacity: 0.3;
+}
+.btn:focus {
+  outline: 0;
 }
 
 .hidden {
@@ -182,6 +178,9 @@ main {
   flex-direction: column;
   text-align: center;
 }
+.advantages p:nth-child(3) {
+  margin: 0;
+}
 
 .advantages-background-blue {
   background-color: var(--basic-light-blue);
@@ -194,7 +193,7 @@ main {
 }
 
 .advantages-tittle {
-  margin-top: 47px;
+  margin: 47px 0 0 0;
 }
 
 .icon-block {
@@ -274,6 +273,12 @@ main {
 .footer-left {
   flex-direction: column;
   justify-content: flex-start;
+}
+.footer-visit {
+  margin: 23px 0 9px 0;
+}
+.footer-phone {
+	margin: 0px;
 }
 
 .footer-center {
@@ -356,6 +361,7 @@ main {
 .arrival-date-input {
   padding-right: 45px;
   grid-area: 1 / 2 / 2 / 5;
+  text-transform: uppercase;
 }
 
 .departure-date {
@@ -365,6 +371,7 @@ main {
 .departure-date-input {
   padding-right: 45px;
   grid-area: 2 / 2 / 3 / 5;
+  text-transform: uppercase;
 }
 
 .calendar-arrival {
@@ -490,6 +497,7 @@ main {
   font-size: 16px;
   font-family: "PTSans-Bold";
   height: 21px;
+  margin: 0;
 }
 
 .legend-text~input {
@@ -580,7 +588,7 @@ main {
   display: none;
 }
 
-.checkbox-item+label {
+.checkbox-item + label {
   margin-left: 39px;
   cursor: pointer;
 }
@@ -724,6 +732,10 @@ main {
   grid-template-columns: 110px 142px;
   grid-column-gap: 6px;
   margin-top: -11.5px;
+}
+.block-name-price p,
+.block-hotel-name h2 {
+  margin: 0;
 }
 
 .block-hotel-name {
