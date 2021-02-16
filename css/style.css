@@ -21,10 +21,6 @@
 }
 * {
   margin: 0;
-  font-family: "PTSans", "Arial", sans-serif;
-  line-height: 21px;
-  font-size: 14px;
-  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -38,6 +34,10 @@ body {
   justify-content: center;
   background-color: var(--background);
   padding: 0 40px;
+  font-family: "PTSans", "Arial", sans-serif;
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 main {
