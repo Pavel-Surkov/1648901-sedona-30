@@ -582,8 +582,24 @@ main {
   border: 2px solid #FFF;
   border-radius: 2px;
   height: 30px;
+  width: 160px;
 }
-
+.input-from {
+	border-right: none;
+	margin-right: -1px;
+}
+.input-to {
+	border-left: 0;
+	margin-left: -1px
+}
+.input-stick {
+	position: absolute;
+	background-color: var(--basic-white);
+	width: 2px;
+	height: 22px;
+	margin-top: 38px;
+	margin-left: 160px;
+}
 .checkbox-item {
   display: none;
 }
