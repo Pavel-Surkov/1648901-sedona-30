@@ -20,7 +20,7 @@
 }
 * {
   margin: 0px;
-  font-family: "PTSans";
+  font-family: "PTSans", "Arial", sans-serif;
   line-height: 21px;
   font-size: 14px;
   font-weight: 400;
@@ -124,6 +124,7 @@ main {
 	height: 80px;
 	margin-bottom: 16.5px;
 	text-align: center;
+	line-height: 26px;
 }
 .first-block div,
 .last-block div {
@@ -142,6 +143,8 @@ main {
 	margin-bottom: 32px;
 }
 .block-text {
+	line-height: 24px;
+	font-size: 14px;
 	text-align: center;
 }
 .advantages {
@@ -154,6 +157,7 @@ main {
 }
 .advantages-background-blue {
 	background-color: var(--basic-light-blue);
+	color: var(--basic-white);
 }
 .advantages-number {
 	margin-top: 25px;
@@ -389,6 +393,7 @@ main {
 }
 
 .search-submit {
+	color: var(--basic-white);
 	margin-top: 25px;
 	background-color: var(--basic-light-blue);
 	border: none;
@@ -403,20 +408,13 @@ main {
 .background-gray {
 	background-color: var(--background);
 }
-.search-header,
-.advantages-background-blue,
-.brown-button,
-.info-button,
-.search-submit,
-.form-catalog,
-.range-input-text,
-.right-fieldset-submit {
-	color: var(--basic-white);
-}
 .legend-text {
 	font-size: 16px;
 	font-family: "PTSans-Bold";
 	height: 21px;
+}
+.legend-text ~ input {
+	color: var(--basic-white);
 }
 .form-structure label:nth-child(5),
 .form-housing-type label:nth-child(5) {
@@ -512,6 +510,7 @@ main {
 	background-repeat: no-repeat;
 }
 .right-fieldset-submit {
+	color: var(--basic-white);
 	background: transparent;
 	border: 2px solid #FFF;
 	border-radius: 2px;
@@ -531,6 +530,7 @@ main {
 	padding-right: 73px;
 	padding-left: 73px;
 	height: 217px;
+	color: var(--basic-white);
 }
 .sort {
 	display: flex;
@@ -624,6 +624,7 @@ main {
 
 .info-button,
 .brown-button {
+	color: var(--basic-white);
 	border: none;
 }
 .info-button {
