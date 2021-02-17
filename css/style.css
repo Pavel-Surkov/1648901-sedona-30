@@ -53,10 +53,6 @@ main {
 	opacity: 0.3;
 }
 
-.btn:focus {
-	outline: 0;
-}
-
 .hidden {
 	display: none;
 }
@@ -575,10 +571,6 @@ main {
 	border: 9px solid white;
 }
 
-.toggle:focus {
-	outline: 0;
-}
-
 .toggle-max {
 	margin-top: -20px;
 }
@@ -725,6 +717,7 @@ main {
 	display: flex;
 	list-style: none;
 	align-self: flex-end;
+	margin: 0;
 }
 
 .block-stars li {
