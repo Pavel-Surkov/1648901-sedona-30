@@ -567,7 +567,6 @@ main {
 	background-color: #ABABAB;
 	border: 8px solid white;
 	border-radius: 50%;
-	/*background-image: radial-gradient(circle closest-side, #ABABAB 20%, #FFF 25%, #FFF 95%, transparent);*/
 	box-shadow: 0 2px 0 rgba(171, 171, 171, 0.3);
 	cursor: pointer;
 }
@@ -622,12 +621,12 @@ main {
 	display: none;
 }
 
-.checkbox-item+label {
+.checkbox-item + label {
 	margin-left: 39px;
 	cursor: pointer;
 }
 
-.checkbox-item+label::before {
+.checkbox-item + label:before {
 	content: "";
 	position: absolute;
 	width: 23px;
@@ -637,7 +636,7 @@ main {
 	margin-left: -39px;
 }
 
-.checkbox-item:checked+label::before {
+.checkbox-item:checked + label:before {
 	content: "";
 	position: absolute;
 	background: url(../img/checkbox-on.svg);
