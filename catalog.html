@@ -17,7 +17,8 @@
 				<div class="navigation-info navigation-item"><a href="##">информация</a></div>
 				<div class="navigation-photo navigation-item"><a href="#">фото и видео</a></div>
 				<div class="navigation-map navigation-item"><a href="#">карта штата</a></div>
-				<div class="navigation-hotels navigation-item"><a href="catalog.html">гостиницы</a></div>
+				<div class="navigation-hotels navigation-item item-active"><a class="item-active" 
+					href="catalog.html">гостиницы</a></div>
 			</nav>
 			<a class="logo" href="index.html"><img src="img/logo.svg" alt="Логотип" width="138" height="70"></a>
 		</header>
@@ -25,28 +26,28 @@
 			<h2 class="hidden">Форма поиска отелей</h2>
 			<form class="form-catalog">
 				<div class="form-structure">
-					<h2 class="legend-text">ИНФРАСТРУКТУРА:</h2>
+					<h2 class="legend-text">Инфраструктура</h2>
 					<input class="checkbox-item" type="checkbox" name="structure" value="Pool" checked id="pool">
-					<label for="pool">БАССЕЙН</label>
+					<label for="pool">Бассейн</label>
 					<input class="checkbox-item" type="checkbox" name="structure" value="Parking" id="parking">
-					<label for="parking">ПАРКОВКА</label>
+					<label for="parking">Парковка</label>
 					<input class="checkbox-item" type="checkbox" name="structure" value="WI-FI" id="wi-fi">
 					<label for="wi-fi">WI-FI</label>
 				</div>
 				<div class="form-housing-type">
-					<h2 class="legend-text">ТИП ЖИЛЬЯ:</h2>
+					<h2 class="legend-text">Тип жилья:</h2>
 					<input class="checkbox-item" type="checkbox" name="type-of-house" value="Hotel" checked id="hotel">
-					<label for="hotel">ГОСТИНИЦА</label>
+					<label for="hotel">Гостиница</label>
 					<input class="checkbox-item" type="checkbox" name="type-of-house" value="Motel" checked id="motel">
-					<label for="motel">МОТЕЛЬ</label>
+					<label for="motel">Мотель</label>
 					<input class="checkbox-item" type="checkbox" name="type-of-house" value="Apartments" checked id="apartments">
-					<label for="apartments">АПАРТАМЕНТЫ</label>
+					<label for="apartments">Апартаменты</label>
 				</div>
 				<div class="form-housing-cost">
-					<h2 class="legend-text">СТОИМОСТЬ В СУТКИ (Р):</h2>
-					<input class="input-from btn" type="text" name="from" value="ОТ">
+					<h2 class="legend-text">Стоимость в сутки (Р):</h2>
+					<input class="input-from" type="text" name="from" value="ОТ 0">
 					<div class="input-stick"></div>
-					<input class="input-to btn" type="text" name="to" value="ДО">
+					<input class="input-to" type="text" name="to" value="ДО 3000">
 					<div class="range-filter">
 						<div class="range-controls">
 							<div class="scale">

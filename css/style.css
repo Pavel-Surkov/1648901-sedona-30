@@ -53,6 +53,10 @@ main {
 	opacity: 0.3;
 }
 
+.btn:focus {
+	outline: none;
+}
+
 .hidden {
 	display: none;
 }
@@ -460,6 +464,7 @@ main {
 	background-color: #EBEBEB;
 }
 
+
 .arrival-date-input:focus,
 .departure-date-input:focus,
 .adults-count:focus,
@@ -482,7 +487,8 @@ main {
 	grid-area: 4 / 1 / 5 / 5;
 }
 
-.search-submit:hover {
+.search-submit:hover,
+.search-submit:focus {
 	background-color: #669EC0;
 }
 
@@ -561,14 +567,15 @@ main {
 	background-color: #ABABAB;
 	border: 8px solid white;
 	border-radius: 50%;
+	/*background-image: radial-gradient(circle closest-side, #ABABAB 20%, #FFF 25%, #FFF 95%, transparent);*/
 	box-shadow: 0 2px 0 rgba(171, 171, 171, 0.3);
 	cursor: pointer;
 }
 
-.toggle:hover {
-	width: 4px;
-	height: 4px;
-	border: 9px solid white;
+.toggle:hover,
+.toggle:focus {
+	transform: scale(1.263);
+	outline: none;
 }
 
 .toggle-max {
@@ -651,9 +658,11 @@ main {
 	justify-self: center;
 }
 
-.right-fieldset-submit:hover {
+.right-fieldset-submit:hover,
+.right-fieldset-submit:focus {
 	background-color: #FFF;
 	color: #000;
+	outline: none;
 }
 
 .diffuse-background {
@@ -794,11 +803,13 @@ main {
 	background-color: var(--basic-dark-brown);
 }
 
-.info-button:hover {
+.info-button:hover,
+.info-button:focus {
 	background-color: #669EC0;
 }
 
-.brown-button:hover {
+.brown-button:hover,
+.brown-button:focus {
 	background-color: #604E43;
 }
 
@@ -812,4 +823,12 @@ main {
 
 .form-catalog-section {
 	height: 217px;
+}
+
+.item-active {
+	color: var(--basic-dark-brown);
+}
+
+.input-from, .input-to {
+	outline: none;
 }
