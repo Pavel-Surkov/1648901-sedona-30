@@ -435,25 +435,15 @@ main {
 	padding: 0 40px;
 }
 
-.arrival-date-input,
-.departure-date-input,
-.adults-count,
-.kids-count {
+.search-info input {
 	background-color: var(--basic-light-gray);
 }
 
-.arrival-date-input:hover,
-.departure-date-input:hover,
-.adults-count:hover,
-.kids-count:hover {
+.search-info input:hover {
 	background-color: #EBEBEB;
 }
 
-
-.arrival-date-input:focus,
-.departure-date-input:focus,
-.adults-count:focus,
-.kids-count:focus {
+.search-info input:focus {
 	background-color: var(--basic-white);
 	outline: none;
 	border: 2px solid #E5E5E5;
