@@ -391,20 +391,19 @@ main {
 	margin-top: 75px;
 }
 
-.calendar-arrival:hover path,
-.calendar-departure:hover path {
+.search-svg:hover path,
+.search-svg:hover rect {
 	fill: black;
 }
-
-.calendar-arrival:active path,
-.calendar-departure:active path {
+.search-svg:active path, 
+.search-svg:active rect {
 	fill: var(--basic-light-blue);
 }
 
 .plus-adults {
 	border: 13px solid transparent;
 	position: absolute;
-	margin-left: 193px;
+	margin-left: 190px;
 	margin-top: 136px;
 }
 
@@ -425,7 +424,7 @@ main {
 .plus-kids {
 	border: 13px solid transparent;
 	position: absolute;
-	margin-left: 425px;
+	margin-left: 422px;
 	margin-top: 136px;
 }
 
@@ -434,20 +433,6 @@ main {
 	width: 34px;
 	text-align: center;
 	padding: 0 40px;
-}
-
-.plus-adults:hover path,
-.minus-adults:hover rect,
-.minus-kids:hover rect,
-.plus-kids:hover path {
-	fill: black;
-}
-
-.plus-adults:active path,
-.minus-adults:active rect,
-.minus-kids:active rect,
-.plus-kids:active path {
-	fill: var(--basic-light-blue);
 }
 
 .arrival-date-input,
