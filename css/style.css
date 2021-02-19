@@ -507,7 +507,7 @@ main {
 	margin: 0;
 }
 
-.legend-text~input {
+.legend-text ~ input {
 	color: var(--basic-white);
 }
 
@@ -569,10 +569,12 @@ main {
 	border-radius: 50%;
 	box-shadow: 0 2px 0 rgba(171, 171, 171, 0.3);
 	cursor: pointer;
+	transition: 100ms;
 }
 
 .toggle:hover,
 .toggle:focus {
+	transition: 100ms;
 	transform: scale(1.263);
 	outline: none;
 }
