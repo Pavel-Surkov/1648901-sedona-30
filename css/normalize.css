@@ -362,9 +362,9 @@ form {
 }
 h2 {
   font-size: 21px;
-  font-family: "PTSans-Bold";
+  font-weight: 700;
   line-height: 26px;
 }
 input {
-  font-family: "PTSans-Bold";
+  font-weight: 700;
 }
