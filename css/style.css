@@ -550,7 +550,13 @@ main {
 .toggle:hover,
 .toggle:focus {
 	transition: 100ms;
+
+	-webkit-transform: scale(1.263);
+	-moz-transform: scale(1.263);
+	-ms-transform: scale(1.263);
+	-o-transform: scale(1.263);
 	transform: scale(1.263);
+
 	outline: none;
 }
 
