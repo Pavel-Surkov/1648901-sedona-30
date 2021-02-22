@@ -128,6 +128,9 @@ main {
 .main-block {
 	display: flex;
 }
+.main-block .advantages {
+	z-index: 999;
+}
 
 .about-tittle {
 	margin-bottom: 25px;
@@ -137,6 +140,10 @@ main {
 	height: 216px;
 	flex-direction: column;
 	align-items: center;
+}
+
+.first-block p {
+	margin: 0;
 }
 
 .first-block-tittle {
@@ -156,9 +163,11 @@ main {
 }
 
 .last-block {
-	height: 291px;
+	z-index: 999;
+	height: 205px;
 	flex-direction: column;
 	align-items: center;
+	background-color: var(--basic-white);
 }
 
 .last-block-tittle {
@@ -168,6 +177,7 @@ main {
 }
 
 .block-text {
+	margin: 0;
 	line-height: 24px;
 	font-size: 14px;
 	text-align: center;
@@ -279,11 +289,9 @@ main {
 	justify-content: flex-start;
 }
 
-.footer-visit {
-	margin: 23px 0 9px 0;
-}
-
 .footer-phone {
+	font-weight: 700;
+	font-size: 21px;
 	margin: 0px;
 }
 
@@ -292,6 +300,9 @@ main {
 }
 
 .footer-visit {
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 26px;
 	margin-top: 23px;
 	margin-bottom: 9px;
 }
@@ -304,8 +315,9 @@ main {
 	height: 395px;
 	align-self: center;
 	margin-bottom: 200px;
-	z-index: 950;
+	z-index: 400;
 }
+
 
 .website-by-text {
 	margin-right: 8px;
@@ -324,6 +336,7 @@ main {
 	width: 568px;
 	border: none;
 	align-self: center;
+	z-index: 999;
 }
 
 .search-button span {
@@ -807,4 +820,26 @@ main {
 
 .input-from, .input-to {
 	outline: none;
+}
+
+@keyframes down {
+	from { margin-bottom: 595px }
+	to { margin-bottom: 200px }
+}
+
+@keyframes up {
+	from { margin-bottom: 200px }
+	to { margin-bottom: 595px }
+}
+
+.form-down {
+	animation-name: down;
+	animation-duration: 1s;
+	margin-bottom: 200px;
+}
+
+.form-up {
+	animation-name: up;
+	animation-duration: 1s;
+	margin-bottom: 595px;
 }
