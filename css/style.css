@@ -58,7 +58,8 @@ main {
 }
 
 .hidden {
-	display: none;
+	position: absolute;
+	visibility: hidden;
 }
 
 .main-head {
@@ -300,7 +301,7 @@ main {
 	position: absolute;
 	display: block;
 	width: 568px;
-	height: 481px;
+	height: 395px;
 	align-self: center;
 	margin-bottom: 200px;
 	z-index: 950;
@@ -318,18 +319,11 @@ main {
 	fill: #BDBBBC
 }
 
-.search-header {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: var(--basic-dark-brown);
-	height: 86px;
-}
-
 .search-button {
 	height: 86px;
 	width: 568px;
 	border: none;
+	align-self: center;
 }
 
 .search-button span {
