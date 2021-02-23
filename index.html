@@ -88,14 +88,16 @@
 			</div>
 			<button type="button" class="brown-button search-button btn" onclick="showHide()">
 						<span>Поиск гостиницы в Седоне</span></button>
-			<form class="search-window form-updown">
+			<form class="search-window" action="https://echo.htmlacademy.ru/" target="_blank">
 				<div class="search-info">
-					<label class="arrival-date search-text">Дата заезда:</label><input class="arrival-date-input" 
-					type="text" value="24 апреля 2017">
-					<label class="departure-date search-text">Дата выезда:</label><input class="departure-date-input" 
-					type="text" value="4 июля 2017">
-					<label class="adults search-text" aria-label="Количество взрослых">Взрослые:</label><input class="adults-count" type="text" value="2">
-					<label class="kids search-text search-text-kids" aria-label="Количество детей">Дети:</label><input class="kids-count" type="text" value="0">
+					<label class="arrival-date search-text" for="arrive">Дата заезда:</label>
+					<input class="arrival-date-input" type="text" value="24 апреля 2017" id="arrive">
+					<label class="departure-date search-text" for="depart">Дата выезда:</label>
+					<input class="departure-date-input" type="text" value="4 июля 2017" id="depart">
+					<label class="adults search-text" aria-label="Количество взрослых" for="adults">Взрослые:</label>
+					<input class="adults-count" type="text" id="adults">
+					<label class="kids search-text search-text-kids" aria-label="Количество детей" for="kids">Дети:</label>
+					<input class="kids-count" type="text" id="kids">
 					<button class="search-submit btn" type="submit"><span>найти</span></button>
 					<svg class="search-svg calendar-arrival" width="21" height="23" viewBox="0 0 21 23" fill="none" 
 					xmlns="http://www.w3.org/2000/svg">
