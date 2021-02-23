@@ -5,23 +5,6 @@ const dateTo = formPopup.querySelector('.departure-date-input');
 const adults = formPopup.querySelector('.adults-count');
 const kids = formPopup.querySelector('.kids-count');
 
-let isAdultsCountSupport = true;
-const adultsCount = '';
-const kidsCount = '';
-
-try {
-	adultsCount = localStorage.getItem('adults');
-} catch(err) {
-	isAdultsCountSupport = false;
-}
-
-//По идее должна при загрузке страницы менять значения на те, которые в localSrorage.
-
-window.onload = function fillLowerFields() {
-	adults.value = localStorage.getItem('adults');
-	kids.value = localStorage.getItem('kids');
-}
-
 //управляет анимацией выезда формы
 
 let times = 0;
@@ -37,13 +20,18 @@ function showHide() {
 	}
 }
 
+window.onload = function fillLowerFields() {
+	adults.value = localStorage.getItem('adults');
+	kids.value = localStorage.getItem('kids');
+}
+
 //Проверяет поля на заполненность. localStorage количество взрослых и детей почему-то не сохраняет
 
 formPopup.addEventListener('submit', function(event) {
 	if(!dateFrom.value || !dateTo.value || !adults.value || !kids.value) {
 		event.preventDefault();
 		alert('Нужно заполнить все поля!');
-	} else if(isAdultsCountSupport){
+	} else {
 		localStorage.setItem('adults', adults.value);
 		localStorage.setItem('kids', kids.value);
 	}
