@@ -704,6 +704,12 @@ main {
 	color: var(--basic-light-blue);
 	border: none;
 }
+
+.sort a:active {
+	color: black;
+	border: none;
+}
+
 .sort .sort-pointer-active path {
 	fill: #81B3D2;
 }
