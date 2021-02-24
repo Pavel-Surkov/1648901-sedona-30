@@ -674,6 +674,12 @@ main {
 	align-items: center;
 }
 
+.sort a,
+.sort p {
+	font-size: 12px;
+	line-height: 18px;
+}
+
 .sort a:nth-child(3) {
 	color: var(--basic-light-blue);
 }

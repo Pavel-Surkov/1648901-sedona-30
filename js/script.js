@@ -25,7 +25,7 @@ window.onload = function fillLowerFields() {
 	kids.value = localStorage.getItem('kids');
 }
 
-//Проверяет поля на заполненность. localStorage количество взрослых и детей почему-то не сохраняет
+//Проверяет поля на заполненность. localStorage сохраняет количество взрослых и детей
 
 formPopup.addEventListener('submit', function(event) {
 	if(!dateFrom.value || !dateTo.value || !adults.value || !kids.value) {
