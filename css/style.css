@@ -482,27 +482,24 @@ main {
 	background-color: var(--basic-gray);
 }
 
-.legend-text {
+.legend-text-housing {
 	font-size: 16px;
 	font-weight: 700;
 	height: 21px;
 	margin: 0;
 }
 
-.legend-text ~ input {
-	color: var(--basic-white);
-}
-
-.form-structure label:nth-child(5),
-.form-housing-type label:nth-child(5) {
-	margin-top: 25px;
-	margin-bottom: 25px;
+.legend-text {
+	font-size: 16px;
+	font-weight: 700;
 	height: 21px;
+	margin: 0 0 24px 0;
 }
 
-.form-structure label:nth-child(3),
-.form-housing-type label:nth-child(3) {
-	margin-top: 24px;
+.form-structure label,
+.form-housing-type label {
+	color: inherit;
+	margin: 0 0 25px 0;
 }
 
 .form-structure {
