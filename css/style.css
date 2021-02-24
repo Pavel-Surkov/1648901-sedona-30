@@ -683,11 +683,45 @@ main {
 .sort a:nth-child(3) {
 	color: var(--basic-light-blue);
 }
+.sort p:nth-child(2) {
+	margin-left: 46px;
+	margin-right: 40px;
+}
 
-.sort a:nth-child(4),
+.sort a:nth-child(4) {
+	margin-left: 32px;
+	margin-right: 32px;
+	color: rgb(0, 0, 0, 0.3);
+	border-bottom: 1px dashed var(--basic-light-blue);
+}
+
 .sort a:nth-child(5) {
 	color: rgb(0, 0, 0, 0.3);
 	border-bottom: 1px dashed var(--basic-light-blue);
+}
+
+.sort-pointer {
+	cursor: pointer;
+}
+
+.sort-pointer-up {
+	margin-left: auto;
+}
+
+.sort-pointer-down {
+	margin-left: 12px;
+}
+
+.sort-pointer:hover path {
+	fill: black;
+}
+
+.sort-pointer:focus {
+	outline: none;
+}
+
+.sort-pointer:focus path {
+	fill: #81B3D2;
 }
 
 .line {
@@ -736,24 +770,6 @@ main {
 	color: #666;
 	margin-top: 40px;
 	padding: 3px 12px 3px 15px;
-}
-
-.sort p:nth-child(2) {
-	margin-left: 46px;
-	margin-right: 40px;
-}
-
-.sort a:nth-child(4) {
-	margin-left: 32px;
-	margin-right: 32px;
-}
-
-.sort-pointer-up {
-	margin-left: auto;
-}
-
-.sort-pointer-down {
-	margin-left: 12px;
 }
 
 .block-name-price {
