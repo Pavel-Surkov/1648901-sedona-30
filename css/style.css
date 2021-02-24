@@ -674,30 +674,43 @@ main {
 	align-items: center;
 }
 
-.sort a,
 .sort p {
 	font-size: 12px;
 	line-height: 18px;
 }
 
-.sort a:nth-child(3) {
-	color: var(--basic-light-blue);
-}
 .sort p:nth-child(2) {
 	margin-left: 46px;
 	margin-right: 40px;
 }
 
-.sort a:nth-child(4) {
-	margin-left: 32px;
-	margin-right: 32px;
+.sort-price {
+	color: var(--basic-light-blue);
+}
+
+.sort a {
+	font-size: 12px;
+	line-height: 18px;
 	color: rgb(0, 0, 0, 0.3);
 	border-bottom: 1px dashed var(--basic-light-blue);
 }
 
-.sort a:nth-child(5) {
-	color: rgb(0, 0, 0, 0.3);
+.sort a:hover {
+	color: var(--basic-light-blue);
 	border-bottom: 1px dashed var(--basic-light-blue);
+}
+
+.sort .sort-link-active {
+	color: var(--basic-light-blue);
+	border: none;
+}
+.sort .sort-pointer-active path {
+	fill: #81B3D2;
+}
+
+.sort-type {
+	margin-left: 32px;
+	margin-right: 32px;
 }
 
 .sort-pointer {
@@ -718,10 +731,6 @@ main {
 
 .sort-pointer:focus {
 	outline: none;
-}
-
-.sort-pointer:focus path {
-	fill: #81B3D2;
 }
 
 .line {
