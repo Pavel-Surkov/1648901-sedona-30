@@ -339,10 +339,6 @@ main {
 	z-index: 999;
 }
 
-.search-button span {
-	font-size: 21px;
-}
-
 .search-info {
 	display: grid;
 	height: 285px;
@@ -350,6 +346,10 @@ main {
 	grid-template-columns: 112px 114px 118px 118px;
 	grid-row-gap: 30px;
 	padding: 55px;
+}
+
+.search-button span {
+	font-size: 21px;
 }
 
 .search-info label {
