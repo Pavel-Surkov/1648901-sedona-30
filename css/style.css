@@ -66,10 +66,9 @@ main {
 	display: flex;
 	align-items: center;
 	height: 56px;
-	width: 1200px;
-	line-height: 26px;
-	padding-left: 73px;
-	padding-right: 73px;
+	max-width: 1200px;
+	padding: 0 73px 0 73px;
+	box-sizing: border-box;
 }
 
 .navigation {
@@ -103,54 +102,48 @@ main {
 	align-self: flex-start;
 	margin-left: 458px;
 	position: absolute;
-	z-index: 999;
+	z-index: 1;
 }
 
 .main-picture {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 	width: 1200px;
 	height: 509px;
 }
 
-.main-picture img {
+.background-photo-jpg {
 	position: absolute;
 }
 
-.margin-welcome-svg {
-	margin: 77.35px auto 386.9px auto;
+.welcome-svg {
+	margin-top: auto;
+	z-index: 1;
 }
 
-.margin-lower-svg {
-	margin-top: 452px;
+.lower-svg {
+	z-index: 1;
+	margin-top: 25px;
 }
 
-.main-block {
+.info-block {
 	display: flex;
-}
-.main-block .advantages {
-	z-index: 999;
 }
 
 .about-tittle {
-	margin-bottom: 25px;
+	margin: 0 auto 25px auto;
 }
 
 .first-block {
-	height: 216px;
-	flex-direction: column;
-	align-items: center;
+	padding: 42px 0 51px 0;
 }
 
 .first-block p {
-	margin: 0;
+	text-align: center;
 }
 
 .first-block-tittle {
-	margin-top: 42px;
-	width: 470px;
-	height: 80px;
-	margin-bottom: 17px;
 	text-align: center;
 	line-height: 26px;
 }
@@ -163,7 +156,6 @@ main {
 }
 
 .last-block {
-	z-index: 999;
 	height: 205px;
 	flex-direction: column;
 	align-items: center;
@@ -228,7 +220,7 @@ main {
 	width: 1200px;
 	background-color: white;
 	display: flex;
-	z-index: 100;
+	z-index: 1;
 }
 
 .main-footer-catalog {
@@ -236,7 +228,7 @@ main {
 }
 
 .panel-bottom {
-	z-index: 900;
+	z-index: 1;
 	background-color: white;
 	opacity: 90%;
 	width: 1200px;
@@ -315,7 +307,7 @@ main {
 	height: 395px;
 	align-self: center;
 	margin-bottom: 200px;
-	z-index: 400;
+	z-index: 2;
 }
 
 
@@ -336,7 +328,6 @@ main {
 	width: 568px;
 	border: none;
 	align-self: center;
-	z-index: 999;
 }
 
 .search-info {
