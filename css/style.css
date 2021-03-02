@@ -65,10 +65,10 @@ main {
 .main-head {
 	display: flex;
 	align-items: center;
-	height: 56px;
 	max-width: 1200px;
 	padding: 0 73px 0 73px;
 	box-sizing: border-box;
+	min-height: 56px;
 }
 
 .navigation {
@@ -78,6 +78,7 @@ main {
 
 .navigation-item a {
 	font-weight: 700;
+	margin: 15px 0;
 }
 
 .navigation-item a:hover {
@@ -124,7 +125,7 @@ main {
 
 .lower-svg {
 	z-index: 1;
-	margin-top: 25px;
+	margin-top: auto;
 }
 
 .info-block {
@@ -353,8 +354,7 @@ main {
 }
 
 .search-text {
-	display: flex;
-	align-items: center;
+	margin: auto 0 auto 0;
 }
 
 .arrival-date {
