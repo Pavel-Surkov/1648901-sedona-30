@@ -36,3 +36,4 @@ formPopup.addEventListener('submit', function(event) {
 		localStorage.setItem('kids', kids.value);
 	}
 })
+

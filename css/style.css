@@ -380,55 +380,6 @@ main {
 	text-transform: uppercase;
 }
 
-.calendar-arrival {
-	position: absolute;
-	margin-left: 428px;
-	margin-top: 7px;
-}
-
-.calendar-departure {
-	position: absolute;
-	margin-left: 428px;
-	margin-top: 75px;
-}
-
-.search-svg:hover path,
-.search-svg:hover rect {
-	fill: black;
-}
-.search-svg:active path, 
-.search-svg:active rect {
-	fill: var(--basic-light-blue);
-}
-
-.plus-adults {
-	border: 13px solid transparent;
-	position: absolute;
-	margin-left: 190px;
-	margin-top: 136px;
-}
-
-.minus-adults {
-	border: 13px solid transparent;
-	position: absolute;
-	margin-left: 112px;
-	margin-top: 140px;
-}
-
-.minus-kids {
-	border: 13px solid transparent;
-	position: absolute;
-	margin-left: 345px;
-	margin-top: 140px;
-}
-
-.plus-kids {
-	border: 13px solid transparent;
-	position: absolute;
-	margin-left: 422px;
-	margin-top: 136px;
-}
-
 .adults-count,
 .kids-count {
 	width: 34px;
