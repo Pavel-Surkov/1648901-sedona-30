@@ -161,6 +161,7 @@ main {
 	flex-direction: column;
 	align-items: center;
 	background-color: var(--basic-white);
+	z-index: 3;
 }
 
 .last-block-tittle {
@@ -177,7 +178,7 @@ main {
 }
 
 .advantages {
-	height: 256px;
+	min-height: 256px;
 	background-color: var(--basic-gray);
 	width: 400px;
 	display: flex;
@@ -242,6 +243,7 @@ main {
 	height: 594px;
 	width: 1200px;
 	position: absolute;
+	z-index: 0;
 }
 
 .footer-block {
@@ -311,7 +313,6 @@ main {
 	z-index: 2;
 }
 
-
 .website-by-text {
 	margin-right: 8px;
 }
@@ -329,6 +330,8 @@ main {
 	width: 568px;
 	border: none;
 	align-self: center;
+	z-index: 3;
+	cursor: pointer;
 }
 
 .search-info {
@@ -348,13 +351,13 @@ main {
 	font-weight: 700;
 }
 
-.search-text-kids {
-	width: 65px;
-	margin-left: 53px;
-}
-
 .search-text {
 	margin: auto 0 auto 0;
+}
+
+.search-text-kids {
+	width: 65px;
+	margin-left: auto;
 }
 
 .arrival-date {
@@ -458,6 +461,7 @@ main {
 	background-color: var(--basic-light-blue);
 	border: none;
 	grid-area: 4 / 1 / 5 / 5;
+	cursor: pointer;
 }
 
 .search-submit:hover,
