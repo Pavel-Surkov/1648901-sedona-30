@@ -361,30 +361,41 @@ main {
 }
 
 .arrival-date {
-	grid-area: 1 / 1 / 2 / 2;
+	grid-area: 1 / 1 / 2 / 5;
 }
 
-.arrival-date-input {
-	padding-right: 45px;
+.arrival-date-block {
 	grid-area: 1 / 2 / 2 / 5;
-	text-transform: uppercase;
 }
-
-.departure-date {
-	grid-area: 2 / 1 / 3 / 2;
-}
-
-.departure-date-input {
-	padding-right: 45px;
+.departure-date-block {
 	grid-area: 2 / 2 / 3 / 5;
+}
+
+.arrival-date-input,
+.departure-date-input {
+	box-sizing: border-box;
+	padding-left: 12px;
+	padding-right: 45px;
+	height: 100%;
+	width: 100%;
 	text-transform: uppercase;
 }
 
-.adults-count,
-.kids-count {
-	width: 34px;
+.adults-count-block {
+	grid-area: 3 / 2 / 4 / 3;
 	text-align: center;
-	padding: 0 40px;
+}
+.kids-count-block {
+	grid-area: 3 / 4 / 4 / 5;
+}
+
+.adults-count-input,
+.kids-count-input {
+	padding: 0 38px;
+	height: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	text-align: center;
 }
 
 .search-info input {
@@ -399,11 +410,6 @@ main {
 	background-color: var(--basic-white);
 	outline: none;
 	border: 2px solid #E5E5E5;
-}
-
-.arrival-date-input,
-.departure-date-input {
-	padding-left: 12px;
 }
 
 .search-submit {

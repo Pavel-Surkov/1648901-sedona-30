@@ -2,8 +2,8 @@ const formPopup = document.querySelector('.search-window');
 
 const dateFrom = formPopup.querySelector('.arrival-date-input');
 const dateTo = formPopup.querySelector('.departure-date-input');
-const adults = formPopup.querySelector('.adults-count');
-const kids = formPopup.querySelector('.kids-count');
+const adults = formPopup.querySelector('.adults-count-input');
+const kids = formPopup.querySelector('.kids-count-input');
 
 //управляет анимацией выезда формы
 
