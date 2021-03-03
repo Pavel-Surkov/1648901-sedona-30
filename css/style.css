@@ -367,6 +367,14 @@ main {
 .arrival-date-block {
 	grid-area: 1 / 2 / 2 / 5;
 }
+.calendar-svg {
+	width: 37px;
+	height: 37px;
+	box-sizing: border-box;
+	padding: 7px;
+	position: absolute;
+	margin-left: -38px;
+}
 .departure-date-block {
 	grid-area: 2 / 2 / 3 / 5;
 }
@@ -385,9 +393,25 @@ main {
 	grid-area: 3 / 2 / 4 / 3;
 	text-align: center;
 }
+.minus-svg {
+	box-sizing: border-box;
+	position: absolute;
+	width: 37px;
+	height: 37px;
+	padding: 17px 12px;
+}
+.plus-svg {
+	box-sizing: border-box;
+	position: absolute;
+	width: 37px;
+	height: 37px;
+	padding: 13px 13px;
+	margin-left: -37px;
+}
 .kids-count-block {
 	grid-area: 3 / 4 / 4 / 5;
 }
+
 
 .adults-count-input,
 .kids-count-input {
@@ -396,6 +420,10 @@ main {
 	max-width: 100%;
 	box-sizing: border-box;
 	text-align: center;
+}
+
+.form-svg {
+	display: none;
 }
 
 .search-info input {
