@@ -1,4 +1,4 @@
-const formPopup = document.querySelector('.search-window');
+const formPopup = document.querySelector('.form-wrapper');
 
 const dateFrom = formPopup.querySelector('.arrival-date-input');
 const dateTo = formPopup.querySelector('.departure-date-input');

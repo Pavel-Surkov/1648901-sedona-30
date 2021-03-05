@@ -124,8 +124,8 @@ main {
 }
 
 .lower-svg {
-	z-index: 1;
 	margin-top: auto;
+	z-index: 1;
 }
 
 .info-block {
@@ -161,7 +161,6 @@ main {
 	flex-direction: column;
 	align-items: center;
 	background-color: var(--basic-white);
-	z-index: 3;
 }
 
 .last-block-tittle {
@@ -184,8 +183,8 @@ main {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	z-index: 3;
 }
+
 
 .advantages p:nth-child(3) {
 	margin: 0;
@@ -243,8 +242,9 @@ main {
 .map {
 	height: 594px;
 	width: 1200px;
+	background-image: url(../img/map.png);
+	background-repeat: no-repeat;
 	position: absolute;
-	z-index: 0;
 }
 
 .footer-block {
@@ -303,14 +303,20 @@ main {
 	margin-bottom: 9px;
 }
 
-.search-window {
-	background-color: white;
-	position: absolute;
-	display: block;
+.form-wrapper {
+	align-self: center;
 	width: 568px;
 	height: 395px;
-	align-self: center;
+	position: absolute;
 	margin-bottom: 200px;
+	overflow: hidden;
+}
+
+.search-window {
+	background-color: white;
+	display: block;
+	width: 568px;
+	align-self: center;
 	z-index: 2;
 }
 
@@ -331,7 +337,6 @@ main {
 	width: 568px;
 	border: none;
 	align-self: center;
-	z-index: 3;
 	cursor: pointer;
 }
 
@@ -848,23 +853,25 @@ main {
 }
 
 @keyframes down {
-	from { margin-bottom: 595px }
-	to { margin-bottom: 200px }
+	0% { height: 0 }
+	100% { height: 395px }
 }
 
 @keyframes up {
-	from { margin-bottom: 200px }
-	to { margin-bottom: 595px }
-}
-
-.form-down {
-	animation-name: down;
-	animation-duration: 1s;
-	margin-bottom: 200px;
+	0% { height: 395px }
+	100% { height: 0 }
 }
 
 .form-up {
 	animation-name: up;
 	animation-duration: 1s;
-	margin-bottom: 595px;
+	height: 0;
+	transition: all;
+}
+
+.form-down {
+	animation-name: down;
+	animation-duration: 1s;
+	height: 395px;
+	transition: all;
 }
