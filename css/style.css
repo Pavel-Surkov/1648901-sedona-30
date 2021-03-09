@@ -119,12 +119,12 @@ main {
 }
 
 .welcome-svg {
-	margin-top: auto;
+	margin-top: 77px;
 	z-index: 1;
 }
 
 .lower-svg {
-	margin-top: auto;
+	margin-top: 23px;
 	z-index: 1;
 }
 
@@ -142,18 +142,13 @@ main {
 
 .first-block p {
 	text-align: center;
+	margin: 0;
 }
 
 .first-block-tittle {
 	text-align: center;
 	line-height: 26px;
-}
-
-.first-block div,
-.last-block div {
-	display: flex;
-	flex-basis: 1200px;
-	text-align: center;
+	margin: 0 0 45px 0;
 }
 
 .last-block {
@@ -183,8 +178,14 @@ main {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	padding: 47px 50px 54px 50px;
+	box-sizing: border-box;
 }
 
+.advantages-tittle {
+	margin: 0;
+	line-height: 1em;
+}
 
 .advantages p:nth-child(3) {
 	margin: 0;
@@ -198,10 +199,6 @@ main {
 .advantages-number {
 	margin-top: 25px;
 	margin-bottom: 23px;
-}
-
-.advantages-tittle {
-	margin: 47px 0 0 0;
 }
 
 .icon-block {
@@ -340,6 +337,10 @@ main {
 	cursor: pointer;
 }
 
+.search-button span {
+	font-size: 21px;
+}
+
 .search-info {
 	display: grid;
 	height: 285px;
@@ -453,6 +454,10 @@ main {
 	border: none;
 	grid-area: 4 / 1 / 5 / 5;
 	cursor: pointer;
+}
+
+.search-submit span {
+	font-size: 21px;
 }
 
 .search-submit:hover,
