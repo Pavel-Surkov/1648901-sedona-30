@@ -215,7 +215,7 @@ main {
 }
 
 .main-footer {
-	height: 595px;
+	height: 594px;
 	width: 1200px;
 	background-color: white;
 	display: flex;
@@ -631,6 +631,16 @@ main {
 	height: 23px;
 	width: 27px;
 	margin-left: -39px;
+	background-repeat: no-repeat;
+}
+
+.checkbox-item[disabled] + label:before {
+	background: url(../img/checkbox-off.png);
+	background-repeat: no-repeat;
+}
+
+.checkbox-item[disabled]:checked + label:before {
+	background: url(../img/checkbox-on.png);
 	background-repeat: no-repeat;
 }
 
