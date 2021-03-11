@@ -137,7 +137,7 @@ main {
 }
 
 .first-block {
-	padding: 42px 0 51px 0;
+	padding: 42px 0 54px 0;
 }
 
 .first-block p {
@@ -148,20 +148,20 @@ main {
 .first-block-tittle {
 	text-align: center;
 	line-height: 26px;
-	margin: 0 0 45px 0;
+	margin: 0 0 46px 0;
 }
 
 .last-block {
 	height: 205px;
-	flex-direction: column;
-	align-items: center;
+	display: block;
 	background-color: var(--basic-white);
 }
 
 .last-block-tittle {
 	font-size: 30px;
-	margin-top: 58px;
-	margin-bottom: 32px;
+	margin-top: 55px;
+	margin-bottom: 34px;
+	text-align: center;
 }
 
 .block-text {
@@ -178,7 +178,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	padding: 47px 50px 54px 50px;
+	padding: 46px 40px 54px 40px;
 	box-sizing: border-box;
 }
 
@@ -194,11 +194,13 @@ main {
 .advantages-background-blue {
 	background-color: var(--basic-light-blue);
 	color: var(--basic-white);
+	padding-top: 48px;
+	padding-bottom: 38px;
 }
 
 .advantages-number {
-	margin-top: 25px;
-	margin-bottom: 23px;
+	margin-top: 27px;
+	margin-bottom: 25px;
 }
 
 .icon-block {
@@ -208,10 +210,20 @@ main {
 	flex-direction: column;
 	width: 400px;
 	height: 330px;
+	padding: 55px 30px 32px 30px;
+	box-sizing: border-box;
 }
 
 .icon {
-	margin: 60px 0 30.92px 0;
+	margin-bottom: 24px;
+}
+
+.house-icon {
+	margin-top: 5px;
+}
+
+.burger-icon {
+	margin-top: 7px;
 }
 
 .main-footer {
@@ -289,15 +301,15 @@ main {
 }
 
 .footer-center {
-	width: 200px;
+	width: 280px;
 }
 
 .footer-visit {
 	font-weight: 700;
 	font-size: 21px;
 	line-height: 26px;
-	margin-top: 23px;
-	margin-bottom: 9px;
+	margin-top: 21px;
+	margin-bottom: 11px;
 }
 
 .form-wrapper {
@@ -330,7 +342,7 @@ main {
 }
 
 .search-button {
-	height: 86px;
+	height: 88px;
 	width: 568px;
 	border: none;
 	align-self: center;
@@ -344,10 +356,11 @@ main {
 .search-info {
 	display: grid;
 	height: 285px;
-	grid-template-rows: 38px 38px 38px 83px;
-	grid-template-columns: 112px 114px 118px 118px;
+	grid-template-rows: 38px 38px 41px 80px;
+	grid-template-columns: 112px 114px 118px 114px;
 	grid-row-gap: 30px;
-	padding: 55px;
+	padding: 54px;
+	box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .search-button span {
@@ -375,12 +388,12 @@ main {
 	grid-area: 1 / 2 / 2 / 5;
 }
 .calendar-svg {
-	width: 37px;
+	width: 31px;
 	height: 37px;
 	box-sizing: border-box;
-	padding: 7px;
+	padding: 7px 6px 7px 5px;
 	position: absolute;
-	margin-left: -38px;
+	margin-left: -34px;
 }
 .departure-date-block {
 	grid-area: 2 / 2 / 3 / 5;
@@ -404,15 +417,15 @@ main {
 	box-sizing: border-box;
 	position: absolute;
 	width: 37px;
-	height: 37px;
-	padding: 17px 12px;
+	height: 39px;
+	padding: 18px 12px;
 }
 .plus-svg {
 	box-sizing: border-box;
 	position: absolute;
 	width: 37px;
-	height: 37px;
-	padding: 13px 13px;
+	height: 39px;
+	padding: 14px 13px;
 	margin-left: -37px;
 }
 .kids-count-block {
@@ -424,7 +437,7 @@ main {
 .kids-count-input {
 	padding: 0 38px;
 	height: 100%;
-	max-width: 100%;
+	max-width: 114px;
 	box-sizing: border-box;
 	text-align: center;
 }
@@ -449,11 +462,13 @@ main {
 
 .search-submit {
 	color: var(--basic-white);
-	margin-top: 25px;
+	margin-top: auto;
+	min-height: 58px;
 	background-color: var(--basic-light-blue);
 	border: none;
 	grid-area: 4 / 1 / 5 / 5;
 	cursor: pointer;
+	padding: 0;
 }
 
 .search-submit span {
