@@ -491,15 +491,14 @@ main {
 .legend-text-housing {
 	font-size: 16px;
 	font-weight: 700;
-	height: 21px;
-	margin: 0;
+	margin: 0 0 10px 0;
 }
 
 .legend-text {
 	font-size: 16px;
 	font-weight: 700;
 	height: 21px;
-	margin: 0 0 24px 0;
+	margin: 0 0 28px 0;
 }
 
 .form-structure label,
@@ -511,27 +510,20 @@ main {
 .form-structure {
 	display: flex;
 	flex-direction: column;
-	margin-top: 26.5px;
-	margin-bottom: 32px;
 }
 
 .form-housing-type {
 	display: flex;
 	flex-direction: column;
 	width: 136px;
-	margin: 26.5px 347px 32px 119px;
+	margin-right: 342px;
+	margin-left: 122px;
 }
 
 .form-housing-cost {
 	display: block;
-	margin-top: 26.5px;
-	margin-bottom: 32px;
 	width: 317px;
 	height: 158px;
-}
-
-.form-housing-cost h2 {
-	height: 31.5px;
 }
 
 .inputs-from-to {
@@ -596,9 +588,10 @@ main {
 	background: transparent;
 	border: 2px solid #FFF;
 	border-radius: 2px;
-	height: 30px;
+	height: 36px;
 	width: 160px;
 	color: white;
+	box-sizing: border-box;
 }
 
 .input-from {
@@ -682,10 +675,10 @@ main {
 }
 
 .form-catalog {
-	padding-right: 73px;
-	padding-left: 73px;
+	padding: 23px 73px;
 	height: 217px;
 	color: var(--basic-white);
+	box-sizing: border-box;
 }
 
 .sort {
@@ -766,6 +759,7 @@ main {
 	background-color: #E5E5E5;
 	height: 1px;
 	border: none;
+	margin: 0;
 }
 
 .block-hotel {
@@ -806,7 +800,7 @@ main {
 
 .rating-text {
 	color: #666;
-	margin-top: 40px;
+	margin-top: 46px;
 	padding: 3px 12px 3px 15px;
 }
 
