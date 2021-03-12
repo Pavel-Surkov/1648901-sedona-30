@@ -516,8 +516,8 @@ main {
 	display: flex;
 	flex-direction: column;
 	width: 136px;
-	margin-right: 342px;
-	margin-left: 122px;
+	margin-right: 346px;
+	margin-left: 120px;
 }
 
 .form-housing-cost {
@@ -608,7 +608,7 @@ main {
 	position: absolute;
 	background-color: var(--basic-white);
 	width: 2px;
-	height: 22px;
+	height: 23px;
 	margin-top: 6px;
 	margin-left: 160px;
 }
@@ -629,7 +629,7 @@ main {
 	height: 23px;
 	background-repeat: no-repeat;
 	background: url(../img/checkbox-off.svg);
-	margin-left: -39px;
+	margin-left: -40px;
 }
 
 .checkbox-item:checked + label:before {
@@ -638,7 +638,7 @@ main {
 	background: url(../img/checkbox-on.svg);
 	height: 23px;
 	width: 27px;
-	margin-left: -39px;
+	margin-left: -40px;
 	background-repeat: no-repeat;
 }
 
