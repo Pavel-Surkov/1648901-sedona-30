@@ -356,8 +356,8 @@ main {
 .search-info {
 	display: grid;
 	height: 285px;
-	grid-template-rows: 38px 38px 41px 80px;
-	grid-template-columns: 112px 114px 118px 114px;
+	grid-template-rows: 38px 38px 38px 83px;
+	grid-template-columns: 113px 114px 118px 114px;
 	grid-row-gap: 30px;
 	padding: 54px;
 	box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
@@ -391,7 +391,7 @@ main {
 	width: 31px;
 	height: 37px;
 	box-sizing: border-box;
-	padding: 7px 6px 7px 5px;
+	padding: 7px 5px 7px 5px;
 	position: absolute;
 	margin-left: -34px;
 }
