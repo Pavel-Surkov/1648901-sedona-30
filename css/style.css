@@ -81,8 +81,10 @@ main {
 	margin: 15px 0;
 }
 
-.navigation-item a:hover {
+.navigation-item a:hover,
+.navigation-item a:focus {
 	color: var(--basic-light-blue);
+	outline: none;
 }
 
 .navigation-item a:active {
