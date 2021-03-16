@@ -277,8 +277,10 @@ main {
 	margin: 0 3px 0 3px;
 }
 
+.footer-icon:focus,
 .footer-icon:hover {
 	background-color: #669EC0;
+	outline: 0;
 }
 
 .footer-icon:active {
@@ -301,6 +303,11 @@ main {
 	font-size: 21px;
 	margin: 0px;
 }
+
+.footer-phone:focus {
+	color: var(--basic-light-blue);
+	outline: none;
+};
 
 .footer-center {
 	width: 280px;
@@ -337,10 +344,16 @@ main {
 
 .logo-academy:hover path {
 	fill: var(--basic-light-blue);
+	outline: none;
 }
 
 .logo-academy:active path {
 	fill: #BDBBBC
+}
+
+.logo-academy:focus path {
+	fill: var(--basic-light-blue);
+	outline: none;
 }
 
 .search-button {
@@ -713,9 +726,11 @@ main {
 	border-bottom: 1px dashed var(--basic-light-blue);
 }
 
-.sort a:hover {
+.sort a:hover,
+.sort a:focus {
 	color: var(--basic-light-blue);
 	border-bottom: 1px dashed var(--basic-light-blue);
+	outline: none;
 }
 
 .sort .sort-link-active {
@@ -728,7 +743,7 @@ main {
 	border: none;
 }
 
-.sort .sort-pointer-active path {
+.sort-pointer-active path {
 	fill: #81B3D2;
 }
 
@@ -739,6 +754,10 @@ main {
 
 .sort-pointer {
 	cursor: pointer;
+}
+
+.sort-pointer:focus path {
+	fill: #000;
 }
 
 .sort-pointer-up {
