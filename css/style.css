@@ -342,18 +342,14 @@ main {
 	margin-right: 8px;
 }
 
-.logo-academy:hover path {
+.logo-academy:hover path,
+.logo-academy:focus path {
 	fill: var(--basic-light-blue);
 	outline: none;
 }
 
 .logo-academy:active path {
 	fill: #BDBBBC
-}
-
-.logo-academy:focus path {
-	fill: var(--basic-light-blue);
-	outline: none;
 }
 
 .search-button {
@@ -768,11 +764,9 @@ main {
 	margin-left: 12px;
 }
 
-.sort-pointer:hover path {
+.sort-pointer:hover path,
+.sort-pointer:focus path {
 	fill: black;
-}
-
-.sort-pointer:focus {
 	outline: none;
 }
 
@@ -844,7 +838,8 @@ main {
 	grid-area: 1 / 1 / 2 / 3;
 }
 
-.block-hotel-name:hover {
+.block-hotel-name:hover,
+.block-hotel-name:focus {
 	color: var(--basic-light-blue);
 }
 
@@ -890,6 +885,7 @@ main {
 }
 
 .item-active {
+	font-weight: 700;
 	color: var(--basic-dark-brown);
 }
 
