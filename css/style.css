@@ -277,10 +277,18 @@ main {
 	margin: 0 3px 0 3px;
 }
 
-.footer-icon:focus,
+.footer-icon__link {
+	width: 46px;
+	margin-right: 5px;
+	outline: none;
+}
+
+.footer-icon__link:focus .footer-icon {
+	background-color: #669EC0;
+}
+
 .footer-icon:hover {
 	background-color: #669EC0;
-	outline: 0;
 }
 
 .footer-icon:active {
@@ -342,13 +350,16 @@ main {
 	margin-right: 8px;
 }
 
-.logo-academy:hover path,
-.logo-academy:focus path {
-	fill: var(--basic-light-blue);
+.logo-academy__link {
 	outline: none;
 }
 
-.logo-academy:active path {
+.logo-academy:hover .logo-academy__path,
+.logo-academy__link:focus .logo-academy__path {
+	fill: var(--basic-light-blue);
+}
+
+.logo-academy:active .logo-academy__path {
 	fill: #BDBBBC
 }
 
