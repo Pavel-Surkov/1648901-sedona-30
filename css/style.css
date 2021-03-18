@@ -346,7 +346,7 @@
 	font-size: 21px;
 	line-height: 26px;
 	margin-top: 21px;
-	margin-bottom: 11px;
+	margin-bottom: 12px;
 }
 
 .form-wrapper {
@@ -538,11 +538,11 @@
 	font-size: 16px;
 	font-weight: 700;
 	height: 21px;
-	margin: 0 0 28px 0;
+	margin: 0 0 27px 0;
 }
 
 .form-housing-cost .legend-title {
-	margin: 0 0 10px 0;
+	margin: 0 0 12px 0;
 }
 
 .form-structure label,
@@ -554,14 +554,16 @@
 .form-structure {
 	display: flex;
 	flex-direction: column;
+	padding: 0;
+	margin: 0;
 }
 
 .form-housing-type {
 	display: flex;
 	flex-direction: column;
 	width: 136px;
-	margin-right: 346px;
-	margin-left: 120px;
+	margin-right: 348px;
+	margin-left: 118px;
 }
 
 .form-housing-cost {
