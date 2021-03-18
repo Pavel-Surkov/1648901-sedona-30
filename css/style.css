@@ -106,13 +106,15 @@
 }
 
 .logo {
+	left: 50%;
+	transform: translateX(-50%);
 	align-self: flex-start;
-	margin-left: 458px;
 	position: absolute;
 	z-index: 1;
 }
 
 .main-picture {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -130,8 +132,10 @@
 }
 
 .lower-svg {
-	margin-top: 23px;
 	z-index: 1;
+	left: 0;
+	bottom: 0;
+	position: absolute;
 }
 
 .info-block {
@@ -168,6 +172,7 @@
 	margin-top: 55px;
 	margin-bottom: 34px;
 	text-align: center;
+	line-height: 1.15em;
 }
 
 .block-text {
@@ -523,17 +528,15 @@
 	background-color: var(--basic-gray);
 }
 
-.legend-text-housing {
-	font-size: 16px;
-	font-weight: 700;
-	margin: 0 0 10px 0;
-}
-
-.legend-text {
+.legend-title {
 	font-size: 16px;
 	font-weight: 700;
 	height: 21px;
 	margin: 0 0 28px 0;
+}
+
+.form-housing-cost .legend-title {
+	margin: 0 0 10px 0;
 }
 
 .form-structure label,
