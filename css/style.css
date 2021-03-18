@@ -698,7 +698,8 @@
 	width: 137px;
 	height: 36px;
 	grid-column: 1 / 3;
-	left: 50%;
+	display: block;
+	margin: auto;
 }
 
 .right-fieldset-submit:hover,
