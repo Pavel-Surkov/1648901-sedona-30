@@ -76,6 +76,15 @@ main {
 	display: flex;
 }
 
+.navigation-item {
+	flex-grow: 1;
+}
+
+.navigation-item:nth-child(3),
+.navigation-item:nth-child(4) {
+	text-align: right;
+}
+
 .navigation-item a {
 	font-weight: 700;
 	margin: 15px 0;
@@ -94,15 +103,6 @@ main {
 .navigation-item a:active {
 	color: black;
 	opacity: 0.3;
-}
-
-.navigation-info {
-	margin-right: 134px;
-}
-
-.navigation-map {
-	margin-left: auto;
-	margin-right: 147px;
 }
 
 .logo {
