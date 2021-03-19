@@ -275,6 +275,7 @@
 	justify-content: center;
 	z-index: 1;
 	position: relative;
+	flex-shrink: 0;
 }
 
 .main-footer-catalog {
