@@ -319,17 +319,18 @@
 	margin-right: 6px;
 }
 
-.footer-icon__link {
+.footer-icon-link {
 	height: 100%;
+	width: 100%;
 	outline: none;
 	display: flex;
 }
 
-.footer-icon__link svg {
+.footer-icon-link svg {
 	margin: auto;
 }
 
-.footer-icon__link:focus .footer-icon {
+.footer-icon-link:focus {
 	background-color: var(--links-and-info);
 }
 
@@ -397,16 +398,16 @@
 	text-transform: uppercase;
 }
 
-.logo-academy__link {
+.logo-academy-link {
 	outline: none;
 }
 
-.logo-academy:hover .logo-academy__path,
-.logo-academy__link:focus .logo-academy__path {
+.logo-academy:hover .logo-academy-path,
+.logo-academy-link:focus .logo-academy-path {
 	fill: var(--basic-light-blue);
 }
 
-.logo-academy:active .logo-academy__path {
+.logo-academy:active .logo-academy-path {
 	fill: #BDBBBC
 }
 
