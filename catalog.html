@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="html" lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -24,11 +24,11 @@
 			<div class="navigation-item">
 				<a href="#">карта штата</a>
 			</div>
-			<div class="navigation-item item-active">
-				<span class="item-active">гостиницы</span>
+			<div class="navigation-item">
+				<a href="catalog.html" class="item-active">гостиницы</a>
 			</div>
 		</nav>
-		<a class="logo" href="index.html"><img src="img/logo.svg" alt="Логотип сайта" width="138" height="70" aria-label="Ссылка на главную страницу"></a>
+		<a class="logo" href="index.html"><img src="img/logo.svg" alt="Логотип Сайта" width="138" height="70"></a>
 	</header>
 	<main class="main">
 		<h1 class="hidden">Поиск гостиницы</h1>
@@ -44,17 +44,17 @@
 					<input class="checkbox-item" type="checkbox" name="structure" value="WI-FI" id="wi-fi">
 					<label for="wi-fi" tabindex="0">WI-FI</label>
 				</fieldset>
-				<div class="form-housing-type">
-					<h2 class="legend-title">Тип жилья:</h2>
+				<fieldset class="form-housing-type">
+					<legend class="legend-title">Тип жилья:</legend>
 					<input class="checkbox-item" type="checkbox" name="type-of-house" value="Hotel" checked id="hotel">
 					<label for="hotel" tabindex="0">Гостиница</label>
 					<input class="checkbox-item" type="checkbox" name="type-of-house" value="Motel" checked id="motel">
 					<label for="motel" tabindex="0">Мотель</label>
 					<input class="checkbox-item" type="checkbox" name="type-of-house" value="Apartments" checked id="apartments">
 					<label for="apartments" tabindex="0">Апартаменты</label>
-				</div>
-				<div class="form-housing-cost">
-					<h2 class="legend-title">Стоимость в сутки (Р):</h2>
+				</fieldset>
+				<fieldset class="form-housing-cost">
+					<legend class="legend-title">Стоимость в сутки (Р):</legend>
 					<div class="inputs-from-to">
 						<input class="input-from" type="text" name="from" value="ОТ 0">
 						<div class="input-stick"></div>
@@ -70,7 +70,7 @@
 						</div>
 					</div>
 					<button class="right-fieldset-submit btn" type="submit" formaction="https://echo.htmlacademy.ru/" formtarget="_blank">ПОКАЗАТЬ</button>
-				</div>
+				</fieldset>
 			</form>
 			<img class="background-gray" src="img/background-photo-cut.jpg" alt="Размытые горы" height="217" width="1200">
 		</section>
@@ -92,14 +92,16 @@
 			<hr class="line">
 			<article class="block-hotel">
 				<img class="background-gray block-hotel-image" src="img/Amara-resort-&-SPA.jpg" alt="Отель, окружённый красными горами" width="135" height="90">
-				<div class="block-name-price">
+				<div class="block-hotel-about">
 					<h2 class="block-hotel-name">
 						<a href="#">AMARA RESORT & SPA</a>
 					</h2>
 					<p>Гостиница</p>
 					<p>ОТ 4000 Р.</p>
 					<button class="info-button btn"><span>Подробнее</span></button>
-					<button class="brown-button btn"><span>Забронировать</span></button>
+					<button class="brown-button btn">
+						<span>Забронировать</span>
+					</button>
 				</div>
 				<div class="block-rating">
 					<ul class="block-stars" title="Рейтинг: 4 звезды">
@@ -114,14 +116,16 @@
 			<hr class="line">
 			<article class="block-hotel">
 				<img class="background-gray block-hotel-image" src="img/Desert-quall-inn.jpg" alt="Мотель как в американских фильмах" width="135" height="90">
-				<div class="block-name-price">
+				<div class="block-hotel-about">
 					<h2 class="block-hotel-name">
 						<a href="#">DESERT QUAIL INN</a>
 					</h2>
 					<p>Мотель</p>
 					<p>ОТ 3000 Р.</p>
 					<button class="info-button btn"><span>Подробнее</span></button>
-					<button class="brown-button btn"><span>Забронировать</span></button>
+					<button class="brown-button btn">
+						<span>Забронировать</span>
+					</button>
 				</div>
 				<div class="block-rating">
 					<ul class="block-stars" title="Рейтинг: 3 звезды">
@@ -135,14 +139,16 @@
 			<hr class="line">
 			<article class="block-hotel">
 				<img class="background-gray block-hotel-image" src="img/Villas-at-poco-diablo.jpg" alt="Одноэтажный домик в лесу с подстриженным газоном" width="135" height="90">
-				<div class="block-name-price">
+				<div class="block-hotel-about">
 					<h2 class="block-hotel-name">
 						<a href="#">VILLAS AT POCO DIABLO</a>
 					</h2>
 					<p>Апартаменты</p>
 					<p>ОТ 2000 Р.</p>
 					<button class="info-button btn"><span>Подробнее</span></button>
-					<button class="brown-button btn"><span>Забронировать</span></button>
+					<button class="brown-button btn">
+						<span>Забронировать</span>
+					</button>
 				</div>
 				<div class="block-rating">
 					<ul class="block-stars" title="Рейтинг: 2 звезды">
