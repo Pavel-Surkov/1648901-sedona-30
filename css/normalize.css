@@ -353,18 +353,3 @@ template {
   display: none;
 }
 
-input {
-  border: none;
-}
-form {
-  display: flex;
-  position: absolute;
-}
-h2 {
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-}
-input {
-  font-weight: 700;
-}
