@@ -222,6 +222,7 @@
 	margin-bottom: 30px;
 	text-align: center;
 	line-height: 1em;
+	transform: translateX(-5px);
 }
 
 .block-text,
