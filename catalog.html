@@ -56,8 +56,10 @@
 				<fieldset class="form-housing-cost">
 					<legend class="legend-title">Стоимость в сутки (Р):</legend>
 					<div class="inputs-from-to">
+						<label name="from" class="hidden">Цена от:</label>
 						<input class="input-from" type="text" name="from" value="ОТ 0">
 						<div class="input-stick"></div>
+						<label name="to" class="hidden">Цена до:</label>
 						<input class="input-to" type="text" name="to" value="ДО 3000">
 					</div>
 					<div class="range-filter">
@@ -82,16 +84,20 @@
 				<a class="sort-price sort-link-active" href="#">ПО ЦЕНЕ</a>
 				<a class="sort-type" href="#">ПО ТИПУ</a>
 				<a class="sort-rating" href="#">ПО РЕЙТИНГУ</a>
-				<svg class="sort-pointer-up sort-pointer" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" tabindex="0">
-					<path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA" />
+				<a class="sort-pointer sort-pointer-up" href="#" aria-label="Сортировка по возрастанию цен">
+					<svg class="sort-pointer-up sort-pointer" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" tabindex="0">
+						<path id="up" d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA" />
 				</svg>
-				<svg class="sort-pointer-down sort-pointer sort-pointer-active" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" tabindex="0">
-					<path d="M5.5 10L0 0H11" fill="#CACACA" />
-				</svg>
+				</a>
+				<a class="sort-pointer sort-pointer-down " href="#" aria-label="Сортировка по убыванию цен">
+					<svg class="sort-pointer" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" tabindex="0">
+						<path id="down" d="M5.5 10L0 0H11" fill="#CACACA" />
+					</svg>
+				</a>
 			</div>
 			<hr class="line">
 			<article class="block-hotel">
-				<img class="background-gray block-hotel-image" src="img/Amara-resort-&-SPA.jpg" alt="Отель, окружённый красными горами" width="135" height="90">
+				<img class="background-gray block-hotel-image" src="img/amara-resort-spa.jpg" alt="Отель, окружённый красными горами" width="135" height="90">
 				<div class="block-hotel-about">
 					<h2 class="block-hotel-name">
 						<a href="#">AMARA RESORT & SPA</a>
@@ -115,7 +121,7 @@
 			</article>
 			<hr class="line">
 			<article class="block-hotel">
-				<img class="background-gray block-hotel-image" src="img/Desert-quall-inn.jpg" alt="Мотель как в американских фильмах" width="135" height="90">
+				<img class="background-gray block-hotel-image" src="img/desert-quall-inn.jpg" alt="Мотель как в американских фильмах" width="135" height="90">
 				<div class="block-hotel-about">
 					<h2 class="block-hotel-name">
 						<a href="#">DESERT QUAIL INN</a>
@@ -138,7 +144,7 @@
 			</article>
 			<hr class="line">
 			<article class="block-hotel">
-				<img class="background-gray block-hotel-image" src="img/Villas-at-poco-diablo.jpg" alt="Одноэтажный домик в лесу с подстриженным газоном" width="135" height="90">
+				<img class="background-gray block-hotel-image" src="img/villas-at-poco-diablo.jpg" alt="Одноэтажный домик в лесу с подстриженным газоном" width="135" height="90">
 				<div class="block-hotel-about">
 					<h2 class="block-hotel-name">
 						<a href="#">VILLAS AT POCO DIABLO</a>
@@ -202,7 +208,5 @@
 			</section>
 		</div>
 	</footer>
-	<script src="js/script-catalog-min.js"></script>
 </body>
-
 </html>
