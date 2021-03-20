@@ -1,7 +1,7 @@
 @font-face {
 	font-family: "PTSans";
 	src: url("../fonts/PTSans.woff2") format('woff2'),
-	url("../fonts/PTSans.woff") format('woff');
+		url("../fonts/PTSans.woff") format('woff');
 	font-weight: 400;
 	font-style: normal;
 }
@@ -9,7 +9,7 @@
 @font-face {
 	font-family: "PTSans";
 	src: url("../fonts/PTSans-Bold.woff") format('woff2'),
-	url("../fonts/PTSans-Bold.woff2") format('woff');
+		url("../fonts/PTSans-Bold.woff2") format('woff');
 	font-weight: 700;
 	font-style: normal;
 }
@@ -279,33 +279,22 @@
 	box-sizing: border-box;
 }
 
-.icon-block:before {
-	content: "";
-	position: absolute;
-}
-
-.icon-block-house:before {
-	top: 60px;
-	width: 75px;
-	height: 72px;
+.icon-block-house {
 	background-image: url(../img/icon-1.svg);
+	background-repeat: no-repeat;
+	background-position: 50% 24%;
 }
 
-.icon-block-food:before {
-	top: 61px;
-	width: 75px;
-	height: 70px;
+.icon-block-food {
 	background-image: url(../img/icon-3.svg);
+	background-repeat: no-repeat;
+	background-position: 50% 24%;
 }
 
-.icon-block-gift:before {
-	width: 64px;
-	height: 77px;
+.icon-block-gift {
 	background-image: url(../img/icon-2.svg);
-}
-
-.icon {
-	margin-bottom: 24px;
+	background-repeat: no-repeat;
+	background-position: 50% 22%;
 }
 
 .house-icon {
@@ -422,7 +411,7 @@
 	font-size: 21px;
 	line-height: 26px;
 	margin-top: 21px;
-	margin-bottom: 11px;
+	margin-bottom: 12px;
 }
 
 .form-wrapper {
@@ -967,7 +956,7 @@
 	width: 11px;
 }
 
-.sort-pointer:hover path,{
+.sort-pointer:hover path {
 	fill: black;
 }
 
@@ -989,7 +978,7 @@
 .block-hotel {
 	display: flex;
 	padding: 24px 73px 30px 73px;
-	height: 150px;
+	min-height: 150px;
 	width: 1200px;
 	box-sizing: border-box;
 	border-bottom: 1px solid var(--basic-gray-light);
