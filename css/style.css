@@ -429,7 +429,7 @@
 	position: absolute;
 	margin-bottom: 200px;
 	overflow: hidden;
-	top: 88px;
+	top: 100%;
 }
 
 .search-window {
@@ -1078,7 +1078,7 @@
 }
 
 .search-button {
-	height: 88px;
+	min-height: 88px;
 	width: 568px;
 	border: none;
 	cursor: pointer;
