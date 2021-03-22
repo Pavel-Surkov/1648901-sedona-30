@@ -83,14 +83,14 @@
 				<a class="sort-price sort-link-active" href="#">ПО ЦЕНЕ</a>
 				<a class="sort-type" href="#">ПО ТИПУ</a>
 				<a class="sort-rating" href="#">ПО РЕЙТИНГУ</a>
-				<a class="sort-pointer sort-pointer-up" href="#" aria-label="Сортировка по возрастанию цен">
-					<svg class="sort-pointer" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" tabindex="0">
-						<path class="sort-pointer-active" id="up" d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+				<a class="sort-pointer sort-pointer-up sort-pointer-active" href="#" aria-label="Сортировка по возрастанию цен" onclick="sort(this)">
+					<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" tabindex="0">
+						<path class="sort-path" id="up" d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
 					</svg>
 				</a>
-				<a class="sort-pointer sort-pointer-down " href="#" aria-label="Сортировка по убыванию">
-					<svg class="sort-pointer" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" tabindex="0">
-						<path id="down" d="M5.5 10L0 0H11" fill="#CACACA" />
+				<a class="sort-pointer sort-pointer-down " href="#" aria-label="Сортировка цен по убыванию" onclick="sort(this)">
+					<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" tabindex="0">
+						<path class="sort-path" id="down" d="M5.5 10L0 0H11" fill="#CACACA" />
 					</svg>
 				</a>
 			</div>
@@ -107,12 +107,10 @@
 					<button class="brown-button btn">Забронировать</button>
 				</div>
 				<div class="block-rating">
-					<ul class="block-stars" title="Рейтинг: 4 звезды">
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
 					<p class="background-gray rating-text">РЕЙТИНГ: 8,5</p> <!-- серый бэкграунд -->
 				</div>
 			</article>
@@ -130,11 +128,9 @@
 					</button>
 				</div>
 				<div class="block-rating">
-					<ul class="block-stars" title="Рейтинг: 3 звезды">
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
+					<div></div>
+					<div></div>
+					<div></div>
 					<p class="background-gray rating-text">РЕЙТИНГ: 8,9</p> <!-- серый бэкграунд -->
 				</div>
 			</article>
@@ -152,10 +148,8 @@
 					</button>
 				</div>
 				<div class="block-rating">
-					<ul class="block-stars" title="Рейтинг: 2 звезды">
-						<li></li>
-						<li></li>
-					</ul>
+					<div></div>
+					<div></div>
 					<p class="background-gray rating-text">РЕЙТИНГ: 9,2</p> <!-- серый бэкграунд -->
 				</div>
 			</article>
