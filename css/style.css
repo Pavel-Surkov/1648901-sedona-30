@@ -726,6 +726,13 @@
 	padding: 0;
 }
 
+
+.form-structure label:last-child,
+.form-housing-type label:last-child,
+.form-housing-cost label:last-child {
+	margin-bottom: 0;
+}
+
 .inputs-from-to {
 	display: flex;
 	height: 56px;
@@ -874,17 +881,12 @@
 	outline: none;
 }
 
-.diffuse-background {
-	position: absolute;
-}
-
 .form-catalog {
 	padding: 25px 73px;
 	min-height: 217px;
 	color: var(--basic-white);
 	box-sizing: border-box;
 	display: flex;
-	position: absolute;
 }
 
 .sort {
