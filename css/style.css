@@ -747,6 +747,10 @@
 	background-color: var(--white-03);
 }
 
+.range-controls {
+	position: relative;
+}
+
 .toggle {
 	margin-top: -11px;
 	width: 3px;
@@ -774,11 +778,23 @@
 
 .toggle-max {
 	margin-top: -20px;
+	touch-action: none;
+	position: absolute;
+	bottom: -8px;
+	left: 240px;
+}
+
+.toggle-min {
+	touch-action: none;
+	position: absolute;
+	bottom: -9px;
+	left: 0;
 }
 
 .scale .bar {
 	height: 2px;
 	opacity: 1;
+	width: 254px;
 	background-color: var(--basic-white);
 }
 
